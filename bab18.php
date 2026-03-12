@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAB 18 · まえに・ bentuk て／た | Rumah Bahasa Surabaya</title>
+  <!-- Fonts: Playfair (serif elegan), DM Sans (modern), Shippori Mincho (Jepang) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=Shippori+Mincho:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --merah: #C0392B;
+      --merah-muda: rgba(192,57,43,0.08);
+      --putih: #FFFFFF;
+      --abu-debu: #F4F2F0;
+      --abu-gelap: #3A3A3A;
+      --abu-sedang: #6E6E6E;
+      --abu-muda: #DDDAD7;
+      --gold: #B78A4B;
+      --border: #E0DDD9;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--putih);
+      color: var(--abu-gelap);
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--putih);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100;
+    }
+
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--merah);
+      letter-spacing: 0.03em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a {
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--abu-sedang);
+      text-decoration: none;
+      white-space: nowrap;
+      padding: 0.2rem 0;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover { color: var(--merah); border-bottom-color: var(--merah); }
+
+    /* Main container */
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    /* Section styling */
+    section {
+      margin-bottom: 4rem;
+      scroll-margin-top: 70px;
+    }
+
+    .section-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--merah);
+      margin-bottom: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .section-eyebrow::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--merah);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--abu-gelap);
+      margin-bottom: 1.2rem;
+      line-height: 1.2;
+    }
+    h2 em { color: var(--merah); font-style: normal; }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--abu-gelap);
+      margin: 1.2rem 0 0.8rem;
+    }
+
+    /* Card / box simple */
+    .card-white {
+      background: var(--putih);
+      border: 1px solid var(--border);
+      border-radius: 0;
+      padding: 2rem 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+
+    .pattern-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .pattern-item {
+      border: 1px solid var(--border);
+      padding: 1.5rem 1.5rem;
+      position: relative;
+      background: var(--putih);
+    }
+    .pattern-item::before {
+      content: '';
+      position: absolute;
+      top: -1px; left: -1px; bottom: -1px;
+      width: 3px;
+      background: var(--merah);
+    }
+    .pattern-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.55rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--merah);
+      margin-bottom: 0.6rem;
+    }
+    .jp-text {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.9;
+      color: var(--abu-gelap);
+    }
+    .romaji {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      color: var(--abu-sedang);
+      letter-spacing: 0.02em;
+      margin-top: 0.1rem;
+    }
+    .id-text {
+      font-size: 0.85rem;
+      color: var(--abu-sedang);
+      margin-top: 0.4rem;
+    }
+
+    /* Highlight red */
+    .jp-highlight { color: var(--merah); font-weight: 700; }
+
+    /* List contoh */
+    .ex-list {
+      list-style: none;
+    }
+    .ex-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .ex-item:last-child { border-bottom: none; }
+    .ex-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--merah);
+      min-width: 1.5rem;
+    }
+    .ex-jp {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1.7;
+    }
+    .ex-romaji {
+      font-size: 0.7rem;
+      color: var(--abu-sedang);
+      margin-top: 0.1rem;
+    }
+    .ex-id {
+      font-size: 0.8rem;
+      color: var(--abu-sedang);
+      margin-top: 0.2rem;
+    }
+
+    /* Tabel kosakata */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .vocab-table th {
+      text-align: left;
+      font-weight: 500;
+      color: var(--abu-sedang);
+      border-bottom: 2px solid var(--border);
+      padding: 0.5rem 0.2rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .vocab-table td {
+      padding: 0.7rem 0.2rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    .vocab-table td:nth-child(2) { font-family: 'Shippori Mincho', serif; font-weight: 700; color: var(--merah); }
+    .vocab-table td:nth-child(3) { color: var(--abu-sedang); font-size: 0.75rem; }
+    .vocab-table .romaji { font-size: 0.7rem; color: var(--abu-sedang); font-family: 'DM Sans', sans-serif; margin-left: 0.3rem; font-weight: 400; }
+
+    /* Tabel konjugasi */
+    .conj-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .conj-table th {
+      background: var(--abu-debu);
+      font-weight: 600;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--abu-gelap);
+      padding: 0.6rem 0.5rem;
+      border: 1px solid var(--border);
+    }
+    .conj-table td {
+      padding: 0.7rem 0.5rem;
+      border: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    .conj-table td:first-child { font-family: 'Shippori Mincho', serif; font-weight: 700; }
+    .conj-table td:nth-child(2), .conj-table td:nth-child(3) { font-family: 'Shippori Mincho', serif; font-weight: 700; color: var(--merah); }
+    .conj-table .gol-row {
+      background: var(--abu-debu);
+      font-weight: 700;
+      text-align: center;
+      color: var(--abu-gelap);
+    }
+
+    /* Rule table */
+    .rule-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin: 1rem 0;
+    }
+    .rule-table th {
+      background: var(--abu-debu);
+      padding: 0.5rem;
+      font-weight: 600;
+      font-size: 0.65rem;
+      letter-spacing: 0.06em;
+      text-align: left;
+    }
+    .rule-table td {
+      padding: 0.6rem 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .rule-table .ending { font-family: 'DM Sans', sans-serif; font-weight: 600; color: var(--merah); }
+    .rule-table .sample { font-family: 'Shippori Mincho', serif; }
+
+    /* Hafalan utsurubunumukugutsu */
+    .mnemonic-box {
+      background: var(--abu-debu);
+      padding: 1.2rem 1.5rem;
+      border-left: 4px solid var(--merah);
+      margin: 1.5rem 0;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .mnemonic {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--merah);
+      letter-spacing: 0.1rem;
+      word-break: keep-all;
+    }
+    .mnemonic-desc {
+      font-size: 0.75rem;
+      color: var(--abu-sedang);
+      margin-top: 0.3rem;
+    }
+
+    /* Latihan grid */
+    .lat1-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 0.8rem;
+      margin: 1.5rem 0;
+    }
+    .lat1-cell {
+      border: 1px solid var(--border);
+      padding: 1rem 0.5rem;
+      text-align: center;
+      background: var(--putih);
+    }
+    .lat1-name { font-weight: 700; margin: 0.3rem 0; }
+    .lat1-answer {
+      font-size: 0.75rem;
+      color: var(--merah);
+      display: none;
+      margin-top: 0.4rem;
+      font-family: 'Shippori Mincho', serif;
+    }
+    .lat1-scene { font-size: 1.4rem; }
+
+    .reveal-btn {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1.2rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--abu-gelap);
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 0.8rem;
+    }
+    .reveal-btn:hover {
+      border-color: var(--merah);
+      color: var(--merah);
+    }
+
+    /* Kuis */
+    .quiz-box {
+      background: var(--abu-debu);
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .quiz-question {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .quiz-romaji {
+      font-size: 0.8rem;
+      color: var(--abu-sedang);
+      margin-bottom: 0.8rem;
+    }
+    .quiz-target {
+      font-size: 1rem;
+      color: var(--abu-gelap);
+      margin-bottom: 1rem;
+    }
+    .quiz-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .qbtn {
+      background: var(--putih);
+      border: 1px solid var(--border);
+      padding: 0.7rem;
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+    .qbtn:hover { border-color: var(--merah); background: var(--merah-muda); }
+    .qbtn.correct { background: #E2F0E6; border-color: #2D7A5F; color: #2D7A5F; }
+    .qbtn.wrong { background: #FEF0EF; border-color: var(--merah); color: var(--merah); }
+    .qfb {
+      padding: 0.7rem 1rem;
+      font-size: 0.8rem;
+      display: none;
+    }
+    .qfb.show { display: block; }
+    .qfb.ok { background: #E2F0E6; color: #2D7A5F; }
+    .qfb.ng { background: #FEF0EF; color: var(--merah); }
+    .qnext {
+      background: var(--merah);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      cursor: pointer;
+      display: none;
+    }
+    .qnext.show { display: inline-block; }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.7rem;
+      color: var(--abu-sedang);
+    }
+
+    /* Responsive */
+    @media (max-width: 650px) {
+      .pattern-grid { grid-template-columns: 1fr; }
+      .lat1-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { gap: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-brand">Rumah Bahasa Surabaya · Bab 18</div>
+    <div class="nav-links">
+      <a href="#pola">Pola まえに</a>
+      <a href="#contoh">Contoh</a>
+      <a href="#latihan1">Latihan 1</a>
+      <a href="#golongan">Golongan</a>
+      <a href="#konjugasi">Konjugasi</a>
+      <a href="#aturan">Aturan Gol I</a>
+      <a href="#latihan2">Latihan 2</a>
+      <a href="#kuis">Kuis</a>
+      <a href="#kosakata">Kosakata</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- COVER -->
+    <section id="cover" style="margin-bottom:2rem;">
+      <div style="padding: 3rem 0 1rem;">
+        <div class="section-eyebrow">Bab 18</div>
+        <h2 style="font-size:2.2rem; margin-bottom:0.5rem;">がっこうへいくまえに、<br>あさごはんをたべます</h2>
+        <div class="romaji" style="font-size:0.9rem; margin-bottom:1.2rem;">gakkou e iku mae ni, asagohan wo tabemasu</div>
+        <p style="font-size:1rem; color:var(--abu-sedang); max-width:600px;">Sebelum pergi ke sekolah, saya makan sarapan. &nbsp;—&nbsp; Pelajari cara menyatakan urutan aktivitas dan konjugasi て・た.</p>
+      </div>
+    </section>
+
+    <!-- A. POLA まえに -->
+    <section id="pola">
+      <div class="section-eyebrow">Pola Dasar</div>
+      <h2>A. <em>V/N のまえに</em> ～</h2>
+      <div class="card-white">
+        <p style="margin-bottom:1rem;">Menyatakan aktivitas yang dilakukan <strong>sebelum</strong> aktivitas lain.</p>
+        <div class="pattern-grid">
+          <div class="pattern-item">
+            <div class="pattern-label">Pola 1 (V + まえに)</div>
+            <div class="jp-text">わたしは べんきょうする まえに たべます</div>
+            <div class="romaji">watashi wa benkyō-suru mae ni tabemasu</div>
+            <div class="id-text">Sebelum saya belajar, saya makan.</div>
+          </div>
+          <div class="pattern-item">
+            <div class="pattern-label">Pola 2 (N + の + まえに)</div>
+            <div class="jp-text">わたしは しけん の まえに べんきょうします</div>
+            <div class="romaji">watashi wa shiken no mae ni benkyō-shimasu</div>
+            <div class="id-text">Sebelum ujian, saya belajar.</div>
+          </div>
+        </div>
+        <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-top:1.2rem;">
+          <span style="font-weight:600;">⚠️ Ingat:</span> kata kerja sebelum まえ selalu <strong>bentuk kamus</strong> (tidak berubah meski sopan).
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTOH KALIMAT -->
+    <section id="contoh">
+      <div class="section-eyebrow">Contoh Kalimat</div>
+      <h2>Penggunaan <em>まえに</em></h2>
+      <ul class="ex-list">
+        <li class="ex-item">
+          <span class="ex-num">1.</span>
+          <div>
+            <div class="ex-jp">私はがっこうへいくまえに、あさごはんをたべます。</div>
+            <div class="ex-romaji">watashi wa gakkō e iku mae ni, asagohan wo tabemasu.</div>
+            <div class="ex-id">Sebelum pergi ke sekolah, saya makan sarapan.</div>
+          </div>
+        </li>
+        <li class="ex-item">
+          <span class="ex-num">2.</span>
+          <div>
+            <div class="ex-jp">ナタポンさんはねるまえに、はをみがきます。</div>
+            <div class="ex-romaji">Natapon-san wa neru mae ni, ha wo migakimasu.</div>
+            <div class="ex-id">Sebelum tidur, Natapon menggosok gigi.</div>
+          </div>
+        </li>
+        <li class="ex-item">
+          <span class="ex-num">3.</span>
+          <div>
+            <div class="ex-jp">あなたはいえへかえるまえに、なにをしますか。</div>
+            <div class="ex-romaji">anata wa ie e kaeru mae ni, nani wo shimasu ka?</div>
+            <div class="ex-id">Sebelum pulang ke rumah, kamu melakukan apa?</div>
+            <div class="ex-jp" style="margin-top:0.3rem;">…コンビニへおべんとうをかいにいきます。</div>
+            <div class="ex-romaji">…konbini e obentō wo kai ni ikimasu.</div>
+            <div class="ex-id">Pergi ke konbini untuk membeli bento.</div>
+          </div>
+        </li>
+        <li class="ex-item">
+          <span class="ex-num">4.</span>
+          <div>
+            <div class="ex-jp">あなたはサッカーのしあいのまえに、なにをしますか。</div>
+            <div class="ex-romaji">anata wa sakkā no shiai no mae ni, nani wo shimasu ka?</div>
+            <div class="ex-id">Sebelum pertandingan sepak bola, kamu melakukan apa?</div>
+            <div class="ex-jp">…れんしゅうします。</div>
+            <div class="ex-romaji">…renshū shimasu.</div>
+            <div class="ex-id">Saya latihan.</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- LATIHAN 1 (gambar) -->
+    <section id="latihan1">
+      <div class="section-eyebrow">Latihan 1</div>
+      <h2>Buat kalimat dari gambar</h2>
+      <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-bottom:1.2rem;">
+        <span style="font-weight:600;">Contoh:</span> りこちゃんは <span class="jp-highlight">たべる</span> まえに、てをあらいます。
+        <div class="romaji">Riko-chan wa taberu mae ni, te wo araimasu.</div>
+      </div>
+      <div class="lat1-grid">
+        <div class="lat1-cell"><div class="lat1-scene">🙏 → 😴</div><div class="lat1-name">ともくん</div><div class="lat1-answer" id="a1">ともくんは ねる まえに、いのります。</div></div>
+        <div class="lat1-cell"><div class="lat1-scene">📚 → 📺</div><div class="lat1-name">かずまくん</div><div class="lat1-answer" id="a2">かずまくんは テレビをみる まえに、べんきょうします。</div></div>
+        <div class="lat1-cell"><div class="lat1-scene">🎬 → 🍽️</div><div class="lat1-name">田中</div><div class="lat1-answer" id="a3">田中さんは えいがをみる まえに、ごはんをたべます。</div></div>
+        <div class="lat1-cell"><div class="lat1-scene">🚿 → 🍺</div><div class="lat1-name">やまと</div><div class="lat1-answer" id="a4">やまとさんは のむ まえに、シャワーをあびます。</div></div>
+        <div class="lat1-cell"><div class="lat1-scene">👕 → 🧹</div><div class="lat1-name">はは</div><div class="lat1-answer" id="a5">ははは そうじする まえに、せんたくします。</div></div>
+      </div>
+      <button class="reveal-btn" onclick="toggleLat1()">Tampilkan / Sembunyikan Jawaban</button>
+    </section>
+
+    <!-- PENGGOLONGAN KATA KERJA -->
+    <section id="golongan">
+      <div class="section-eyebrow">Tata Bahasa B</div>
+      <h2>Penggolongan Kata Kerja</h2>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:0.8rem; margin:1.5rem 0;">
+        <div style="border:1px solid var(--border); padding:1rem;">
+          <div style="font-weight:700; color:var(--merah); margin-bottom:0.5rem;">Golongan I</div>
+          <div style="font-size:0.8rem;">Berakhiran -u (kecuali -iru/-eru). Konjugasi bervariasi.</div>
+          <div style="margin-top:0.6rem; font-family:'Shippori Mincho';">かう・のむ・かく・はなす・とる・まつ</div>
+        </div>
+        <div style="border:1px solid var(--border); padding:1rem;">
+          <div style="font-weight:700; color:var(--merah); margin-bottom:0.5rem;">Golongan II</div>
+          <div style="font-size:0.8rem;">Berakhiran -iru / -eru. Hapus る + て/た.</div>
+          <div style="margin-top:0.6rem; font-family:'Shippori Mincho';">みる・ねる・おきる・たべる</div>
+        </div>
+        <div style="border:1px solid var(--border); padding:1rem;">
+          <div style="font-weight:700; color:var(--merah); margin-bottom:0.5rem;">Golongan III</div>
+          <div style="font-size:0.8rem;">Hanya 2 kata kerja tidak beraturan</div>
+          <div style="margin-top:0.6rem; font-family:'Shippori Mincho';">する → して, くる → きて</div>
+        </div>
+      </div>
+      <div style="background:var(--abu-debu); padding:1rem;">
+        <span style="font-weight:600;">⚠️ Pengecualian Gol. I (meski -eru/-iru):</span> かえる (pulang), はいる (masuk), しる (tahu), きる (potong). Harus dihafal.
+      </div>
+    </section>
+
+    <!-- TABEL KONJUGASI LENGKAP -->
+    <section id="konjugasi">
+      <div class="section-eyebrow">Bentuk ～て / ～た</div>
+      <h2>Tabel Konjugasi</h2>
+      <div style="overflow-x:auto;">
+        <table class="conj-table">
+          <thead><tr><th>Bentuk Kamus</th><th>～て</th><th>～た</th></tr></thead>
+          <tbody>
+            <tr class="gol-row"><td colspan="3">Golongan I</td></tr>
+            <tr><td>かう (kau)</td><td>かって</td><td>かった</td></tr>
+            <tr><td>まつ (matsu)</td><td>まって</td><td>まった</td></tr>
+            <tr><td>とる (toru)</td><td>とって</td><td>とった</td></tr>
+            <tr><td>よぶ (yobu)</td><td>よんで</td><td>よんだ</td></tr>
+            <tr><td>しぬ (shinu)</td><td>しんで</td><td>しんだ</td></tr>
+            <tr><td>のむ (nomu)</td><td>のんで</td><td>のんだ</td></tr>
+            <tr><td>かく (kaku)</td><td>かいて</td><td>かいた</td></tr>
+            <tr><td>いく (iku) ★</td><td>いって</td><td>いった</td></tr>
+            <tr><td>およぐ (oyogu)</td><td>およいで</td><td>およいだ</td></tr>
+            <tr><td>はなす (hanasu)</td><td>はなして</td><td>はなした</td></tr>
+            <tr class="gol-row"><td colspan="3">Golongan II</td></tr>
+            <tr><td>みる (miru)</td><td>みて</td><td>みた</td></tr>
+            <tr><td>おきる (okiru)</td><td>おきて</td><td>おきた</td></tr>
+            <tr><td>ねる (neru)</td><td>ねて</td><td>ねた</td></tr>
+            <tr><td>たべる (taberu)</td><td>たべて</td><td>たべた</td></tr>
+            <tr class="gol-row"><td colspan="3">Golongan III</td></tr>
+            <tr><td>する (suru)</td><td>して</td><td>した</td></tr>
+            <tr><td>くる (kuru)</td><td>きて</td><td>きた</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.7rem; color:var(--abu-sedang); margin-top:0.3rem;">★ iku → itte adalah pengecualian Gol. I.</p>
+    </section>
+
+    <!-- ATURAN GOLONGAN I + RUMUS HAFALAN -->
+    <section id="aturan">
+      <div class="section-eyebrow">Panduan Konjugasi Gol. I</div>
+      <h2>Pola perubahan akhiran</h2>
+      <table class="rule-table">
+        <thead><tr><th>Akhiran</th><th>～て</th><th>～た</th><th>Contoh</th></tr></thead>
+        <tbody>
+          <tr><td class="ending">う・つ・る</td><td>って</td><td>った</td><td class="sample">かう→かって、まつ→まって</td></tr>
+          <tr><td class="ending">む・ぬ・ぶ</td><td>んで</td><td>んだ</td><td class="sample">のむ→のんで、よぶ→よんで</td></tr>
+          <tr><td class="ending">く</td><td>いて</td><td>いた</td><td class="sample">かく→かいて（いく→いって）</td></tr>
+          <tr><td class="ending">ぐ</td><td>いで</td><td>いだ</td><td class="sample">およぐ→およいで</td></tr>
+          <tr><td class="ending">す</td><td>して</td><td>した</td><td class="sample">はなす→はなして</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Rumus hafalan utsurubunumukugutsu -->
+      <div class="mnemonic-box">
+        <div class="mnemonic">う・つ・る → って <span style="color:var(--abu-gelap);">(utsu ru → tte)</span></div>
+        <div class="mnemonic">む・ぬ・ぶ → んで <span style="color:var(--abu-gelap);">(mu nu bu → nde)</span></div>
+        <div class="mnemonic">く → いて <span style="color:var(--abu-gelap);">(ku → ite, kecuali iku→itte)</span></div>
+        <div class="mnemonic">ぐ → いで <span style="color:var(--abu-gelap);">(gu → ide)</span></div>
+        <div class="mnemonic">す → して <span style="color:var(--abu-gelap);">(su → shite)</span></div>
+        <div class="mnemonic-desc" style="margin-top:0.8rem;">✨ Hafalkan: <strong>utsu ru mu nu bu ku gu su</strong> (うつるむぬぶくぐす) — bunyinya seperti "utsurubunumukugutsu"</div>
+      </div>
+    </section>
+
+    <!-- LATIHAN 2 (isian) -->
+    <section id="latihan2">
+      <div class="section-eyebrow">Latihan 2</div>
+      <h2>Isilah bagian rumpang</h2>
+      <div style="overflow-x:auto;">
+        <table class="conj-table" id="lat2">
+          <thead><tr><th>No.</th><th>Bentuk Kamus</th><th>Bentuk ～て</th><th>Bentuk ～た</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>あらう</td><td><span class="bc">___</span><span class="ac" style="display:none;">あらって</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">あらった</span></td></tr>
+            <tr><td>2</td><td><span class="bc">___</span><span class="ac" style="display:none;">のる</span></td><td>のって</td><td><span class="bc">___</span><span class="ac" style="display:none;">のった</span></td></tr>
+            <tr><td>3</td><td><span class="bc">___</span><span class="ac" style="display:none;">みがく</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">みがいて</span></td><td>みがいた</td></tr>
+            <tr><td>4</td><td>せんたくする</td><td><span class="bc">___</span><span class="ac" style="display:none;">せんたくして</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">せんたくした</span></td></tr>
+            <tr><td>5</td><td><span class="bc">___</span><span class="ac" style="display:none;">そうじする</span></td><td>そうじして</td><td><span class="bc">___</span><span class="ac" style="display:none;">そうじした</span></td></tr>
+            <tr><td>6</td><td><span class="bc">___</span><span class="ac" style="display:none;">はらう</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">はらって</span></td><td>はらった</td></tr>
+            <tr><td>7</td><td>ひく</td><td><span class="bc">___</span><span class="ac" style="display:none;">ひいて</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">ひいた</span></td></tr>
+            <tr><td>8</td><td><span class="bc">___</span><span class="ac" style="display:none;">よやくする</span></td><td>よやくして</td><td><span class="bc">___</span><span class="ac" style="display:none;">よやくした</span></td></tr>
+            <tr><td>9</td><td><span class="bc">___</span><span class="ac" style="display:none;">うんてんする</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">うんてんして</span></td><td>うんてんした</td></tr>
+            <tr><td>10</td><td>やすむ</td><td><span class="bc">___</span><span class="ac" style="display:none;">やすんで</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">やすんだ</span></td></tr>
+            <tr><td>11</td><td><span class="bc">___</span><span class="ac" style="display:none;">かす</span></td><td>かして</td><td><span class="bc">___</span><span class="ac" style="display:none;">かした</span></td></tr>
+            <tr><td>12</td><td><span class="bc">___</span><span class="ac" style="display:none;">できる</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">できて</span></td><td>できた</td></tr>
+            <tr><td>13</td><td>おくる</td><td><span class="bc">___</span><span class="ac" style="display:none;">おくって</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">おくった</span></td></tr>
+            <tr><td>14</td><td><span class="bc">___</span><span class="ac" style="display:none;">あつめる</span></td><td>あつめて</td><td><span class="bc">___</span><span class="ac" style="display:none;">あつめた</span></td></tr>
+            <tr><td>15</td><td><span class="bc">___</span><span class="ac" style="display:none;">でかける</span></td><td><span class="bc">___</span><span class="ac" style="display:none;">でかけて</span></td><td>でかけた</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <button class="reveal-btn" onclick="toggleLat2()">Tampilkan / Sembunyikan Jawaban</button>
+    </section>
+
+    <!-- KUIS INTERAKTIF (9 SOAL + ROMAJI) -->
+    <section id="kuis">
+      <div class="section-eyebrow">Kuis Interaktif</div>
+      <h2>Pilih bentuk yang benar</h2>
+      <div class="quiz-box">
+        <div class="quiz-question" id="qJp"></div>
+        <div class="quiz-romaji" id="qRomaji"></div>
+        <div class="quiz-target" id="qTarget"></div>
+        <div class="quiz-options" id="qOpts"></div>
+        <div class="qfb" id="qFb"></div>
+        <button class="qnext" id="qNext" onclick="nextQ()">Soal berikutnya →</button>
+      </div>
+    </section>
+
+    <!-- KOSAKATA BAB 18 -->
+    <section id="kosakata">
+      <div class="section-eyebrow">語彙リスト</div>
+      <h2>Kosakata Bab 18</h2>
+      <table class="vocab-table">
+        <thead><tr><th>#</th><th>Kata</th><th>Kanji</th><th>Arti</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>せんたくします <span class="romaji">(sentaku shimasu)</span></td><td>洗濯する</td><td>Mencuci pakaian</td></tr>
+          <tr><td>2</td><td>そうじします <span class="romaji">(sōji shimasu)</span></td><td>掃除する</td><td>Bersih-bersih</td></tr>
+          <tr><td>3</td><td>れんしゅうします <span class="romaji">(renshū shimasu)</span></td><td>練習する</td><td>Latihan</td></tr>
+          <tr><td>4</td><td>はをみがきます <span class="romaji">(ha wo migakimasu)</span></td><td>歯を磨きます</td><td>Menggosok gigi</td></tr>
+          <tr><td>5</td><td>あらいます <span class="romaji">(araimasu)</span></td><td>洗います</td><td>Mencuci</td></tr>
+          <tr><td>6</td><td>でかけます <span class="romaji">(dekakemasu)</span></td><td>出かけます</td><td>Keluar rumah</td></tr>
+          <tr><td>7</td><td>よびます <span class="romaji">(yobimasu)</span></td><td>呼びます</td><td>Memanggil</td></tr>
+          <tr><td>8</td><td>まちます <span class="romaji">(machimasu)</span></td><td>待ちます</td><td>Menunggu</td></tr>
+          <tr><td>9</td><td>は <span class="romaji">(ha)</span></td><td>歯</td><td>Gigi</td></tr>
+          <tr><td>10</td><td>て <span class="romaji">(te)</span></td><td>手</td><td>Tangan</td></tr>
+          <tr><td>11</td><td>かお <span class="romaji">(kao)</span></td><td>顔</td><td>Wajah</td></tr>
+          <tr><td>12</td><td>しあい <span class="romaji">(shiai)</span></td><td>試合</td><td>Pertandingan</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Rumah Bahasa Surabaya · Belajar Bahasa Jepang jadi mudah dan elegan</p>
+      <p style="margin-top:0.5rem;">© 2026 · BAB 18 – まえに / て形・た形</p>
+    </footer>
+  </main>
+
+  <script>
+    // toggle latihan 1
+    function toggleLat1() {
+      let answers = document.querySelectorAll('.lat1-answer');
+      let hidden = answers[0].style.display !== 'block';
+      answers.forEach(a => a.style.display = hidden ? 'block' : 'none');
+    }
+
+    // toggle latihan 2
+    function toggleLat2() {
+      let ac = document.querySelectorAll('#lat2 .ac');
+      let bc = document.querySelectorAll('#lat2 .bc');
+      let hidden = ac[0].style.display !== 'inline';
+      ac.forEach(el => el.style.display = hidden ? 'inline' : 'none');
+      bc.forEach(el => el.style.display = hidden ? 'none' : 'inline');
+    }
+
+    // KUIS dengan 9 soal dan romaji
+    const quizData = [
+      { jp: 'あらう', romaji: 'arau', target: '～te', opts: ['あらって','あらいて','あらして','あらんで'], ans: 0, ex: 'あらう (Gol.I, う→って) → あらって' },
+      { jp: 'みがく', romaji: 'migaku', target: '～te', opts: ['みがんで','みがって','みがいて','みがして'], ans: 2, ex: 'みがく (Gol.I, く→いて) → みがいて' },
+      { jp: 'ねる', romaji: 'neru', target: '～ta', opts: ['ねった','ねた','ねんだ','ねした'], ans: 1, ex: 'ねる (Gol.II) → hapus る + た → ねた' },
+      { jp: 'やすむ', romaji: 'yasumu', target: '～te', opts: ['やすんで','やすって','やすいて','やすして'], ans: 0, ex: 'やすむ (Gol.I, む→んで) → やすんで' },
+      { jp: 'せんたくする', romaji: 'sentaku suru', target: '～te', opts: ['せんたくって','せんたくした','せんたくして','せんたくんで'], ans: 2, ex: 'する Gol.III → して → せんたくして' },
+      { jp: 'おくる', romaji: 'okuru', target: '～te', opts: ['おくって','おくんで','おくて','おくして'], ans: 0, ex: 'おくる (Gol.I, る→って) → おくって' },
+      { jp: 'できる', romaji: 'dekiru', target: '～ta', opts: ['できった','できんだ','できた','できした'], ans: 2, ex: 'できる (Gol.II) → hapus る + た → できた' },
+      { jp: 'およぐ', romaji: 'oyogu', target: '～te', opts: ['およいで','およって','およいで','およいだ'], ans: 0, ex: 'およぐ (Gol.I, ぐ→いで) → およいで' },
+      { jp: 'はなす', romaji: 'hanasu', target: '～ta', opts: ['はなした','はなって','はなんだ','はなした'], ans: 0, ex: 'はなす (Gol.I, す→した) → はなした' }
+    ];
+
+    let curQ = 0, score = 0, answered = false;
+
+    function renderQuiz() {
+      answered = false;
+      let q = quizData[curQ];
+      document.getElementById('qJp').innerText = q.jp;
+      document.getElementById('qRomaji').innerText = q.romaji;
+      document.getElementById('qTarget').innerHTML = `→ ${q.target} ?`;
+
+      let optsDiv = document.getElementById('qOpts');
+      optsDiv.innerHTML = '';
+      q.opts.forEach((opt, i) => {
+        let btn = document.createElement('button');
+        btn.className = 'qbtn';
+        btn.innerText = opt;
+        btn.onclick = () => checkAns(i, btn);
+        optsDiv.appendChild(btn);
+      });
+      document.getElementById('qFb').innerHTML = '';
+      document.getElementById('qFb').className = 'qfb';
+      document.getElementById('qNext').className = 'qnext';
+    }
+
+    function checkAns(idx, btn) {
+      if (answered) return;
+      answered = true;
+      let q = quizData[curQ];
+      let all = document.querySelectorAll('.qbtn');
+      let fb = document.getElementById('qFb');
+      if (idx === q.ans) {
+        btn.classList.add('correct');
+        score++;
+        fb.innerHTML = '✓ Benar! ' + q.ex;
+        fb.className = 'qfb show ok';
+      } else {
+        btn.classList.add('wrong');
+        all[q.ans].classList.add('correct');
+        fb.innerHTML = '✗ Kurang tepat. ' + q.ex;
+        fb.className = 'qfb show ng';
+      }
+      let nx = document.getElementById('qNext');
+      nx.className = 'qnext show';
+      nx.innerText = (curQ < quizData.length-1) ? 'Soal berikutnya →' : `Selesai! Nilai: ${score}/${quizData.length}`;
+    }
+
+    function nextQ() {
+      if (curQ < quizData.length-1) {
+        curQ++;
+        renderQuiz();
+      } else {
+        document.getElementById('qFb').innerHTML = `お疲れ様！ Nilai akhir: ${score}/${quizData.length}`;
+        document.getElementById('qFb').className = 'qfb show ok';
+        document.getElementById('qNext').className = 'qnext';
+      }
+    }
+
+    window.onload = function() {
+      renderQuiz();
+    };
+  </script>
+</body>
+</html>
