@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAB 6 · がっこうへいきます | Rumah Bahasa SBY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=Shippori+Mincho:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --merah: #C0392B;
+      --merah-muda: rgba(192,57,43,0.08);
+      --putih: #FFFFFF;
+      --abu-debu: #F4F2F0;
+      --abu-gelap: #3A3A3A;
+      --abu-sedang: #6E6E6E;
+      --abu-muda: #DDDAD7;
+      --gold: #B78A4B;
+      --border: #E0DDD9;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--putih);
+      color: var(--abu-gelap);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--putih);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100;
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--merah);
+      letter-spacing: 0.03em;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a {
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--abu-sedang);
+      text-decoration: none;
+      white-space: nowrap;
+      padding: 0.2rem 0;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover { color: var(--merah); border-bottom-color: var(--merah); }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      scroll-margin-top: 70px;
+    }
+
+    .section-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--merah);
+      margin-bottom: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .section-eyebrow::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--merah);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--abu-gelap);
+      margin-bottom: 1.2rem;
+      line-height: 1.2;
+    }
+    h2 em { color: var(--merah); font-style: normal; }
+
+    .card-white {
+      background: var(--putih);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+
+    .pattern-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .pattern-item {
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      position: relative;
+      background: var(--putih);
+    }
+    .pattern-item::before {
+      content: '';
+      position: absolute;
+      top: -1px; left: -1px; bottom: -1px;
+      width: 3px;
+      background: var(--merah);
+    }
+    .pattern-label {
+      font-size: 0.55rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--merah);
+      margin-bottom: 0.6rem;
+    }
+    .jp-text {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.9;
+      color: var(--abu-gelap);
+    }
+    .romaji {
+      font-size: 0.7rem;
+      color: var(--abu-sedang);
+      letter-spacing: 0.02em;
+      margin-top: 0.1rem;
+    }
+    .id-text {
+      font-size: 0.85rem;
+      color: var(--abu-sedang);
+      margin-top: 0.4rem;
+    }
+
+    .jp-highlight { color: var(--merah); font-weight: 700; }
+
+    .ex-list { list-style: none; }
+    .ex-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .ex-item:last-child { border-bottom: none; }
+    .ex-num {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--merah);
+      min-width: 1.5rem;
+    }
+    .ex-jp {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1.7;
+    }
+    .ex-romaji { font-size: 0.7rem; color: var(--abu-sedang); margin-top: 0.1rem; }
+    .ex-id { font-size: 0.8rem; color: var(--abu-sedang); margin-top: 0.2rem; }
+
+    /* Pola table */
+    .pola-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    .pola-table th {
+      background: #3B7DBF;
+      color: white;
+      font-weight: 600;
+      font-size: 0.75rem;
+      padding: 0.6rem 1rem;
+      text-align: center;
+    }
+    .pola-table td {
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--border);
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    .pola-table .particle-col {
+      font-weight: 700;
+      color: var(--merah);
+      font-size: 1.1rem;
+    }
+    .pola-table .trans-row td {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      color: var(--abu-sedang);
+      font-style: italic;
+    }
+
+    /* Vocab table */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .vocab-table th {
+      text-align: left;
+      font-weight: 500;
+      color: var(--abu-sedang);
+      border-bottom: 2px solid var(--border);
+      padding: 0.5rem 0.2rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .vocab-table td {
+      padding: 0.7rem 0.2rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    .vocab-table td:nth-child(2) { font-family: 'Shippori Mincho', serif; font-weight: 700; color: var(--merah); }
+    .vocab-table td:nth-child(3) { color: var(--abu-sedang); font-size: 0.75rem; }
+    .vocab-table .romaji { font-size: 0.7rem; color: var(--abu-sedang); font-family: 'DM Sans', sans-serif; margin-left: 0.3rem; font-weight: 400; }
+
+    /* Latihan grid */
+    .lat-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 0.8rem;
+      margin: 1.5rem 0;
+    }
+    .lat-cell {
+      border: 1px solid var(--border);
+      padding: 1rem 0.7rem;
+      text-align: center;
+      background: var(--putih);
+    }
+    .lat-num {
+      font-size: 0.6rem;
+      font-weight: 700;
+      color: var(--abu-sedang);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .lat-scene { font-size: 2.2rem; margin: 0.4rem 0; }
+    .lat-name {
+      font-family: 'Shippori Mincho', serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin: 0.3rem 0;
+    }
+    .lat-answer {
+      font-size: 0.75rem;
+      color: var(--merah);
+      display: none;
+      margin-top: 0.5rem;
+      font-family: 'Shippori Mincho', serif;
+      line-height: 1.5;
+    }
+    .lat-answer .romaji-small {
+      font-size: 0.7rem;
+      color: var(--abu-sedang);
+      margin-top: 0.1rem;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .reveal-btn {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1.2rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--abu-gelap);
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 0.8rem;
+    }
+    .reveal-btn:hover { border-color: var(--merah); color: var(--merah); }
+
+    /* Catatan box */
+    .note-box {
+      background: var(--abu-debu);
+      padding: 1.2rem 1.5rem;
+      border-left: 4px solid var(--merah);
+      margin: 1.5rem 0;
+    }
+    .note-title { font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem; }
+
+    /* Bulan table */
+    .bulan-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .bulan-table th {
+      background: #d9a0a0;
+      color: var(--abu-gelap);
+      font-weight: 700;
+      padding: 0.6rem;
+      text-align: center;
+    }
+    .bulan-table td {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+    .bulan-table td:nth-child(2) { font-family: 'Shippori Mincho', serif; font-weight: 700; color: var(--merah); }
+
+    /* Tanggal kalender */
+    .cal-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.75rem;
+      margin: 1rem 0;
+    }
+    .cal-table th {
+      background: var(--abu-debu);
+      padding: 0.4rem;
+      text-align: center;
+      font-size: 0.65rem;
+      border: 1px solid var(--border);
+    }
+    .cal-table td {
+      padding: 0.6rem 0.4rem;
+      text-align: center;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .cal-num { font-weight: 700; color: var(--abu-sedang); font-size: 0.7rem; }
+    .cal-yomi { font-size: 0.65rem; color: var(--merah); }
+
+    /* Kuis */
+    .quiz-box {
+      background: var(--abu-debu);
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .quiz-question {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .quiz-romaji { font-size: 0.8rem; color: var(--abu-sedang); margin-bottom: 0.4rem; }
+    .quiz-target { font-size: 1rem; color: var(--abu-gelap); margin-bottom: 1rem; }
+    .quiz-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .qbtn {
+      background: var(--putih);
+      border: 1px solid var(--border);
+      padding: 0.7rem;
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+    .qbtn:hover { border-color: var(--merah); background: var(--merah-muda); }
+    .qbtn.correct { background: #E2F0E6; border-color: #2D7A5F; color: #2D7A5F; }
+    .qbtn.wrong { background: #FEF0EF; border-color: var(--merah); color: var(--merah); }
+    .qfb { padding: 0.7rem 1rem; font-size: 0.8rem; display: none; }
+    .qfb.show { display: block; }
+    .qfb.ok { background: #E2F0E6; color: #2D7A5F; }
+    .qfb.ng { background: #FEF0EF; color: var(--merah); }
+    .qnext {
+      background: var(--merah);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      cursor: pointer;
+      display: none;
+    }
+    .qnext.show { display: inline-block; }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 0.8rem;
+      margin: 1.5rem 0;
+    }
+    .info-card {
+      border: 1px solid var(--border);
+      padding: 1rem;
+    }
+    .info-card-title { font-weight: 700; color: var(--merah); margin-bottom: 0.5rem; font-size: 0.9rem; }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.7rem;
+      color: var(--abu-sedang);
+    }
+
+    @media (max-width: 650px) {
+      .pattern-grid { grid-template-columns: 1fr; }
+      .lat-grid { grid-template-columns: 1fr 1fr; }
+      .info-grid { grid-template-columns: 1fr; }
+      .nav-links { gap: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Rumah Bahasa SBY</div>
+  <div class="nav-links">
+    <a href="#pola-a">Pola A (へ)</a>
+    <a href="#pola-b">Pola B (で)</a>
+    <a href="#pola-c">Pola C (と)</a>
+    <a href="#pola-d">Pola D (に)</a>
+    <a href="#latihan1">Latihan 1</a>
+    <a href="#latihan2">Latihan 2</a>
+    <a href="#latihan3">Latihan 3</a>
+    <a href="#latihan4">Latihan 4</a>
+    <a href="#latihan5">Latihan 5</a>
+    <a href="#kuis">Kuis</a>
+    <a href="#kosakata">Kosakata</a>
+  </div>
+</nav>
+
+<main class="container">
+
+  <!-- COVER -->
+  <section id="cover" style="margin-bottom:2rem;">
+    <div style="padding: 3rem 0 1rem;">
+      <div class="section-eyebrow">Bab 6</div>
+      <h2 style="font-size:2.2rem; margin-bottom:0.5rem;">がっこうへいきます</h2>
+      <div class="romaji" style="font-size:0.9rem; margin-bottom:1.2rem;">gakkou e ikimasu</div>
+      <p style="font-size:1rem; color:var(--abu-sedang); max-width:640px;">Saya pergi ke sekolah. &nbsp;—&nbsp; Pelajari cara menyatakan perpindahan tempat, alat transportasi, teman pergi, dan waktu keberangkatan.</p>
+      <div style="margin-top:1.2rem; padding: 1rem 1.5rem; border: 1px solid var(--border); background: var(--abu-debu); max-width: 520px;">
+        <div style="font-weight:700; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.6rem;">Can Do :</div>
+        <div style="font-size:0.85rem; color:var(--abu-gelap); line-height:1.8;">
+          1. Mahasiswa mampu menyatakan perpidahan tempat<br>
+          2. Mahasiswa mampu menyatakan transportasi yang digunakan saat berpindah tempat<br>
+          3. Mahasiswa mampu menyatakan dengan siapa dan kapan melakukan perpindahan tempat
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A. N へいきます -->
+  <section id="pola-a">
+    <div class="section-eyebrow">Pola A</div>
+    <h2>A. <em>N へいきます/きます/かえります</em></h2>
+    <div class="card-white">
+      <p style="margin-bottom:1.2rem;">Berfungsi untuk <strong>menyatakan perpindahan tempat</strong>.</p>
+      <table class="pola-table">
+        <thead>
+          <tr><th>Lokasi (N)</th><th>へ</th><th>Kata kerja perpindahan (V)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="jp-text">がっこう</td><td class="particle-col">へ</td><td class="jp-text">いきます</td></tr>
+          <tr class="trans-row"><td>gakkou</td><td>e</td><td>ikimasu</td></tr>
+          <tr><td colspan="3" style="font-family:'DM Sans'; font-style:italic; font-size:0.82rem; color:var(--abu-sedang);">(Saya) pergi ke sekolah</td></tr>
+        </tbody>
+      </table>
+      <div class="note-box" style="margin-top:1.2rem;">
+        <div class="note-title">📌 Catatan Tata Bahasa 1</div>
+        <p style="font-size:0.85rem;">Partikel「へ」(dibaca "e", bukan "he") memiliki fungsi untuk menyatakan arah gerakan. Dengan kata lain, partikel「へ」memiliki padanan makna dengan kata depan <strong>"ke"</strong> dalam bahasa Indonesia.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display'; font-size:1.1rem; font-weight:700; margin: 1.5rem 0 0.8rem;">Contoh Kalimat</h3>
+    <ul class="ex-list">
+      <li class="ex-item">
+        <span class="ex-num">1.</span>
+        <div>
+          <div class="ex-jp">〔わたしは〕がっこうへいきます。</div>
+          <div class="ex-romaji">watashi wa gakkou e ikimasu.</div>
+          <div class="ex-id">Saya pergi ke sekolah.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">2.</span>
+        <div>
+          <div class="ex-jp">ふじさきさんはレストランへいきません。</div>
+          <div class="ex-romaji">Fujisaki-san wa resutoran e ikimasen.</div>
+          <div class="ex-id">Fujisaki tidak pergi ke restoran.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">3.</span>
+        <div>
+          <div class="ex-jp">どこへいきますか。</div>
+          <div class="ex-romaji">doko e ikimasu ka?</div>
+          <div class="ex-id">Pergi ke mana?</div>
+          <div class="ex-jp" style="margin-top:0.3rem;">．．．びじゅつかんへいきます。</div>
+          <div class="ex-romaji">...bijutsukan e ikimasu.</div>
+          <div class="ex-id">Pergi ke museum seni.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- B. N でいきます -->
+  <section id="pola-b">
+    <div class="section-eyebrow">Pola B</div>
+    <h2>B. <em>N でいきます/きます/かえります</em></h2>
+    <div class="card-white">
+      <p style="margin-bottom:1.2rem;">Berfungsi untuk <strong>menyatakan alat transportasi</strong> yang digunakan.</p>
+      <table class="pola-table">
+        <thead>
+          <tr><th>Alat transportasi (N)</th><th>で</th><th>Kata kerja perpindahan (V)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="jp-text">じてんしゃ</td><td class="particle-col">で</td><td class="jp-text">かえります</td></tr>
+          <tr class="trans-row"><td>jitensha</td><td>de</td><td>kaerimasu</td></tr>
+          <tr><td colspan="3" style="font-family:'DM Sans'; font-style:italic; font-size:0.82rem; color:var(--abu-sedang);">(Saya) pulang menggunakan sepeda</td></tr>
+        </tbody>
+      </table>
+      <div class="note-box" style="margin-top:1.2rem;">
+        <div class="note-title">📌 Catatan Tata Bahasa 2</div>
+        <p style="font-size:0.85rem;">1. Partikel「で」memiliki fungsi untuk menunjukkan alat dan/atau bahan yang digunakan ketika melakukan sesuatu. Bila dikaitkan dengan tema dalam bab ini, partikel「で」berhubungan dengan transportasi yang digunakan saat berpindah tempat.</p>
+        <p style="font-size:0.85rem; margin-top:0.6rem;">2. Jika tidak menggunakan transportasi apapun ketika berpindah tempat, kosakata yang digunakan adalah「あるいて」yang berarti berjalan kaki. Tidak perlu menggunakan partikel「で」setelah kata「あるいて」, karena partikel「で」dalam konteks ini hanya bisa diletakkan setelah kata benda.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display'; font-size:1.1rem; font-weight:700; margin: 1.5rem 0 0.8rem;">Contoh Kalimat</h3>
+    <ul class="ex-list">
+      <li class="ex-item">
+        <span class="ex-num">1.</span>
+        <div>
+          <div class="ex-jp">あおやまさんはバスでいえへかえります。</div>
+          <div class="ex-romaji">Aoyama-san wa basu de ie e kaerimasu.</div>
+          <div class="ex-id">Aoyama pulang ke rumah dengan bus.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">2.</span>
+        <div>
+          <div class="ex-jp">ワンさんはひこうきでにほんへきました。</div>
+          <div class="ex-romaji">Wan-san wa hikouki de Nihon e kimashita.</div>
+          <div class="ex-id">Wan datang ke Jepang dengan pesawat.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">3.</span>
+        <div>
+          <div class="ex-jp">あなたはなにでかいしゃへいきますか。</div>
+          <div class="ex-romaji">anata wa nani de kaisha e ikimasu ka?</div>
+          <div class="ex-id">Kamu pergi ke kantor dengan apa?</div>
+          <div class="ex-jp" style="margin-top:0.3rem;">．．．あるいていきます。</div>
+          <div class="ex-romaji">...aruite ikimasu.</div>
+          <div class="ex-id">Berjalan kaki.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- C. N といきます -->
+  <section id="pola-c">
+    <div class="section-eyebrow">Pola C</div>
+    <h2>C. <em>N といきます/きます/かえります</em></h2>
+    <div class="card-white">
+      <p style="margin-bottom:1.2rem;">Berfungsi untuk <strong>menyatakan dengan siapa</strong> melakukan perpindahan.</p>
+      <table class="pola-table">
+        <thead>
+          <tr><th>Orang (N)</th><th>と</th><th>Kata kerja perpindahan (V)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="jp-text">かぞく</td><td class="particle-col">と</td><td class="jp-text">きます</td></tr>
+          <tr class="trans-row"><td>kazoku</td><td>to</td><td>kimasu</td></tr>
+          <tr><td colspan="3" style="font-family:'DM Sans'; font-style:italic; font-size:0.82rem; color:var(--abu-sedang);">(Saya) datang dengan keluarga</td></tr>
+        </tbody>
+      </table>
+      <div class="note-box" style="margin-top:1.2rem;">
+        <div class="note-title">📌 Catatan Tata Bahasa 3</div>
+        <p style="font-size:0.85rem;">Jika melakukan perpindahan seorang diri, kosakata yang digunakan adalah「ひとり」. Namun, partikel yang diletakkan setelah kata「ひとり」bukan partikel「と」, melainkan partikel「で」.</p>
+        <div style="margin-top:0.6rem; padding: 0.5rem 0.8rem; background: var(--putih); border: 1px solid var(--border);">
+          <span class="jp-text" style="font-size:0.9rem; color:var(--merah);">ひとりで</span>
+          <span class="romaji" style="margin-left:0.5rem;">hitori de</span>
+          <span class="id-text" style="margin-left:0.5rem;">= seorang diri</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display'; font-size:1.1rem; font-weight:700; margin: 1.5rem 0 0.8rem;">Contoh Kalimat</h3>
+    <ul class="ex-list">
+      <li class="ex-item">
+        <span class="ex-num">1.</span>
+        <div>
+          <div class="ex-jp">わたしはともだちとこうえんへいきます。</div>
+          <div class="ex-romaji">watashi wa tomodachi to kouen e ikimasu.</div>
+          <div class="ex-id">Saya pergi ke taman bersama teman.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">2.</span>
+        <div>
+          <div class="ex-jp">わたしはすずきさんとかいしゃへいきます。</div>
+          <div class="ex-romaji">watashi wa Suzuki-san to kaisha e ikimasu.</div>
+          <div class="ex-id">Saya pergi ke kantor bersama Suzuki.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">3.</span>
+        <div>
+          <div class="ex-jp">あなたはだれとえいがかんへいきますか。</div>
+          <div class="ex-romaji">anata wa dare to eigakan e ikimasu ka?</div>
+          <div class="ex-id">Kamu pergi ke bioskop dengan siapa?</div>
+          <div class="ex-jp" style="margin-top:0.3rem;">．．．ひとりでいきます。</div>
+          <div class="ex-romaji">...hitori de ikimasu.</div>
+          <div class="ex-id">Pergi seorang diri.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- D. N にいきます + bulan + tanggal -->
+  <section id="pola-d">
+    <div class="section-eyebrow">Pola D</div>
+    <h2>D. <em>N にいきます/きます/かえります</em></h2>
+    <div class="card-white">
+      <p style="margin-bottom:1.2rem;">Berfungsi untuk <strong>menyatakan kapan</strong> melakukan perpindahan.</p>
+      <table class="pola-table">
+        <thead>
+          <tr><th>Waktu (N)</th><th>に</th><th>Kata kerja perpindahan (V)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="jp-text">ろくがつ</td><td class="particle-col">に</td><td class="jp-text">いきます</td></tr>
+          <tr class="trans-row"><td>rokugatsu</td><td>ni</td><td>ikimasu</td></tr>
+          <tr><td colspan="3" style="font-family:'DM Sans'; font-style:italic; font-size:0.82rem; color:var(--abu-sedang);">(Saya) pergi pada bulan Juni</td></tr>
+        </tbody>
+      </table>
+      <div class="note-box" style="margin-top:1.2rem;">
+        <div class="note-title">📌 Catatan Tata Bahasa 4</div>
+        <p style="font-size:0.85rem;">Partikel「に」hanya boleh diletakkan setelah hari, tanggal, bulan, dan tahun. Keterangan waktu lain seperti あした、きのう、せんしゅう、らいげつ、dll. tidak boleh diikuti oleh partikel「に」.</p>
+      </div>
+    </div>
+
+    <!-- Bulan -->
+    <h3 style="font-family:'Playfair Display'; font-size:1.1rem; font-weight:700; margin: 1.5rem 0 0.8rem;">Nama-nama Bulan</h3>
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+      <table class="bulan-table">
+        <thead><tr><th colspan="2">Bulan</th></tr></thead>
+        <tbody>
+          <tr><td>Januari</td><td>いちがつ <span class="romaji" style="font-size:0.7rem;">(ichigatsu)</span></td></tr>
+          <tr><td>Februari</td><td>にがつ <span class="romaji" style="font-size:0.7rem;">(nigatsu)</span></td></tr>
+          <tr><td>Maret</td><td>さんがつ <span class="romaji" style="font-size:0.7rem;">(sangatsu)</span></td></tr>
+          <tr><td>April</td><td>しがつ <span class="romaji" style="font-size:0.7rem;">(shigatsu)</span></td></tr>
+          <tr><td>Mei</td><td>ごがつ <span class="romaji" style="font-size:0.7rem;">(gogatsu)</span></td></tr>
+          <tr><td>Juni</td><td>ろくがつ <span class="romaji" style="font-size:0.7rem;">(rokugatsu)</span></td></tr>
+        </tbody>
+      </table>
+      <table class="bulan-table">
+        <thead><tr><th colspan="2">Bulan</th></tr></thead>
+        <tbody>
+          <tr><td>Juli</td><td>しちがつ <span class="romaji" style="font-size:0.7rem;">(shichigatsu)</span></td></tr>
+          <tr><td>Agustus</td><td>はちがつ <span class="romaji" style="font-size:0.7rem;">(hachigatsu)</span></td></tr>
+          <tr><td>September</td><td>くがつ <span class="romaji" style="font-size:0.7rem;">(kugatsu)</span></td></tr>
+          <tr><td>Oktober</td><td>じゅうがつ <span class="romaji" style="font-size:0.7rem;">(juugatsu)</span></td></tr>
+          <tr><td>November</td><td>じゅういちがつ <span class="romaji" style="font-size:0.7rem;">(juuichigatsu)</span></td></tr>
+          <tr><td>Desember</td><td>じゅうにがつ <span class="romaji" style="font-size:0.7rem;">(juunigatsu)</span></td></tr>
+          <tr><td>?</td><td>なんがつ <span class="romaji" style="font-size:0.7rem;">(nangatsu)</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tanggal -->
+    <h3 style="font-family:'Playfair Display'; font-size:1.1rem; font-weight:700; margin: 1.5rem 0 0.8rem;">Nama-nama Tanggal (Hari)</h3>
+    <div style="overflow-x:auto;">
+      <table class="cal-table">
+        <thead>
+          <tr>
+            <th>日<br>Nichi Youbi</th>
+            <th>月<br>Getsu Youbi</th>
+            <th>火<br>Ka Youbi</th>
+            <th>水<br>Sui Youbi</th>
+            <th>木<br>Moku Youbi</th>
+            <th>金<br>Kin Youbi</th>
+            <th>土<br>Do Youbi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td><div class="cal-num">1</div><div class="cal-yomi">TSUITACHI</div></td>
+            <td><div class="cal-num">2</div><div class="cal-yomi">FUTSUKA</div></td>
+          </tr>
+          <tr>
+            <td><div class="cal-num">3</div><div class="cal-yomi">MIKKA</div></td>
+            <td><div class="cal-num">4</div><div class="cal-yomi">YOKKA</div></td>
+            <td><div class="cal-num">5</div><div class="cal-yomi">ITSUKA</div></td>
+            <td><div class="cal-num">6</div><div class="cal-yomi">MUIKA</div></td>
+            <td><div class="cal-num">7</div><div class="cal-yomi">NANOKA</div></td>
+            <td><div class="cal-num">8</div><div class="cal-yomi">YOUKA</div></td>
+            <td><div class="cal-num">9</div><div class="cal-yomi">KOKONOKA</div></td>
+          </tr>
+          <tr>
+            <td><div class="cal-num">10</div><div class="cal-yomi">TOOKA</div></td>
+            <td><div class="cal-num">11</div><div class="cal-yomi">Juu ichi nichi</div></td>
+            <td><div class="cal-num">12</div><div class="cal-yomi">Juu ni nichi</div></td>
+            <td><div class="cal-num">13</div><div class="cal-yomi">Juu san nichi</div></td>
+            <td><div class="cal-num">14</div><div class="cal-yomi">Juu YOKKA</div></td>
+            <td><div class="cal-num">15</div><div class="cal-yomi">Juu go nichi</div></td>
+            <td><div class="cal-num">16</div><div class="cal-yomi">Juu roku nichi</div></td>
+          </tr>
+          <tr>
+            <td><div class="cal-num">17</div><div class="cal-yomi">Juu SHICHI nichi</div></td>
+            <td><div class="cal-num">18</div><div class="cal-yomi">Juu hachi nichi</div></td>
+            <td><div class="cal-num">19</div><div class="cal-yomi">Juu KU nichi</div></td>
+            <td><div class="cal-num">20</div><div class="cal-yomi">Ni juu nichi (HATSUKA)</div></td>
+            <td><div class="cal-num">21</div><div class="cal-yomi">Nii juu ichi nichi</div></td>
+            <td><div class="cal-num">22</div><div class="cal-yomi">Ni juu ni nichi</div></td>
+            <td><div class="cal-num">23</div><div class="cal-yomi">Ni juu san nichi</div></td>
+          </tr>
+          <tr>
+            <td><div class="cal-num">24</div><div class="cal-yomi">Ni juu YOKKA</div></td>
+            <td><div class="cal-num">25</div><div class="cal-yomi">Ni juu go nichi</div></td>
+            <td><div class="cal-num">26</div><div class="cal-yomi">Ni juu roku nichi</div></td>
+            <td><div class="cal-num">27</div><div class="cal-yomi">Ni juu SHICHI nichi</div></td>
+            <td><div class="cal-num">28</div><div class="cal-yomi">Ni juu hachi nichi</div></td>
+            <td><div class="cal-num">29</div><div class="cal-yomi">Ni juu KU nichi</div></td>
+            <td><div class="cal-num">30</div><div class="cal-yomi">San juu nichi (MISOKA)</div></td>
+          </tr>
+          <tr>
+            <td><div class="cal-num">31</div><div class="cal-yomi">San juu ichi nichi</div></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="font-family:'Playfair Display'; font-size:1.1rem; font-weight:700; margin: 1.5rem 0 0.8rem;">Contoh Kalimat</h3>
+    <ul class="ex-list">
+      <li class="ex-item">
+        <span class="ex-num">1.</span>
+        <div>
+          <div class="ex-jp">わたしはろくがつとおかにきょうとへいきます。</div>
+          <div class="ex-romaji">watashi wa rokugatsu tooka ni Kyouto e ikimasu.</div>
+          <div class="ex-id">Saya pergi ke Kyoto pada tanggal 10 Juni.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">2.</span>
+        <div>
+          <div class="ex-jp">マイクさんはしちがつじゅうごにちにアメリカへかえります。</div>
+          <div class="ex-romaji">Maiku-san wa shichigatsu juugo nichi ni Amerika e kaerimasu.</div>
+          <div class="ex-id">Mike kembali ke Amerika pada tanggal 15 Juli.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">3.</span>
+        <div>
+          <div class="ex-jp">あなたはいつインドネシアへいきますか。</div>
+          <div class="ex-romaji">anata wa itsu Indoneshia e ikimasu ka?</div>
+          <div class="ex-id">Kapan kamu pergi ke Indonesia?</div>
+          <div class="ex-jp" style="margin-top:0.3rem;">．．．らいげついきます</div>
+          <div class="ex-romaji">...raigetsu ikimasu.</div>
+          <div class="ex-id">Pergi bulan depan.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- LATIHAN 1 -->
+  <section id="latihan1">
+    <div class="section-eyebrow">Latihan 1</div>
+    <h2>Buat kalimat dari gambar <em>(Pola A)</em></h2>
+    <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-bottom:1.2rem;">
+      <span style="font-weight:600;">例。</span>
+      <span class="jp-text" style="font-size:0.95rem;"> まつもとさんはいえへいきます。</span>
+      <div class="romaji">Matsumoto-san wa ie e ikimasu.</div>
+    </div>
+    <div class="lat-grid">
+      <div class="lat-cell">
+        <div class="lat-num">例</div>
+        <div class="lat-scene">🚶 → 🏠</div>
+        <div class="lat-name">まつもと</div>
+        <div class="lat-answer">まつもとさんはいえへいきます。<div class="romaji-small">Matsumoto-san wa ie e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell" id="l1c1">
+        <div class="lat-num">1</div>
+        <div class="lat-scene">🚶‍♀️ → 🎬</div>
+        <div class="lat-name">みやむら</div>
+        <div class="lat-answer" id="l1a1">みやむらさんはえいがかんへいきます。<div class="romaji-small">Miyamura-san wa eigakan e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">2</div>
+        <div class="lat-scene">🏃‍♀️ → 🛝</div>
+        <div class="lat-name">ゆきちゃん</div>
+        <div class="lat-answer" id="l1a2">ゆきちゃんはこうえんへいきます。<div class="romaji-small">Yuki-chan wa kouen e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">3</div>
+        <div class="lat-scene">💼 → ✈️</div>
+        <div class="lat-name">やまだ</div>
+        <div class="lat-answer" id="l1a3">やまださんはくうこうへいきます。<div class="romaji-small">Yamada-san wa kuukou e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">4</div>
+        <div class="lat-scene">🧒 → 🦁</div>
+        <div class="lat-name">けんたくん</div>
+        <div class="lat-answer" id="l1a4">けんたくんはどうぶつえんへいきます。<div class="romaji-small">Kenta-kun wa doubutsuen e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">5</div>
+        <div class="lat-scene">👩‍💼 → 🏥</div>
+        <div class="lat-name">まきの</div>
+        <div class="lat-answer" id="l1a5">まきのさんはびょういんへいきます。<div class="romaji-small">Makino-san wa byouin e ikimasu.</div></div>
+      </div>
+    </div>
+    <button class="reveal-btn" onclick="toggleLat('l1')">Tampilkan / Sembunyikan Jawaban</button>
+  </section>
+
+  <!-- LATIHAN 2 -->
+  <section id="latihan2">
+    <div class="section-eyebrow">Latihan 2</div>
+    <h2>Buat kalimat dari gambar <em>(Pola B)</em></h2>
+    <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-bottom:1.2rem;">
+      <span style="font-weight:600;">例。</span>
+      <span class="jp-text" style="font-size:0.95rem;"> たかぎさんはバスでホテルへいきます。</span>
+      <div class="romaji">Takagi-san wa basu de hoteru e ikimasu.</div>
+    </div>
+    <div class="lat-grid">
+      <div class="lat-cell">
+        <div class="lat-num">例</div>
+        <div class="lat-scene">🚌 → 🏨</div>
+        <div class="lat-name">たかぎ</div>
+        <div class="lat-answer">たかぎさんはバスでホテルへいきます。<div class="romaji-small">Takagi-san wa basu de hoteru e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">1</div>
+        <div class="lat-scene">🚗 → ☕</div>
+        <div class="lat-name">こばやし</div>
+        <div class="lat-answer" id="l2a1">こばやしさんはくるまでカフェへいきます。<div class="romaji-small">Kobayashi-san wa kuruma de kafe e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">2</div>
+        <div class="lat-scene">🚕 → 🏪</div>
+        <div class="lat-name">もりもと</div>
+        <div class="lat-answer" id="l2a2">もりもとさんはタクシーでコンビニへいきます。<div class="romaji-small">Morimoto-san wa takushii de konbini e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">3</div>
+        <div class="lat-scene">🚃 → 📚</div>
+        <div class="lat-name">なかじま</div>
+        <div class="lat-answer" id="l2a3">なかじまさんはでんしゃでほんやへいきます。<div class="romaji-small">Nakajima-san wa densha de honya e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">4</div>
+        <div class="lat-scene">🏍️ → 🏦</div>
+        <div class="lat-name">やおとめ</div>
+        <div class="lat-answer" id="l2a4">やおとめさんはバイクでぎんこうへいきます。<div class="romaji-small">Yaotome-san wa baiku de ginkou e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">5</div>
+        <div class="lat-scene">🚲 → 🏢</div>
+        <div class="lat-name">おかもと</div>
+        <div class="lat-answer" id="l2a5">おかもとさんはじてんしゃでかいしゃへいきます。<div class="romaji-small">Okamoto-san wa jitensha de kaisha e ikimasu.</div></div>
+      </div>
+    </div>
+    <button class="reveal-btn" onclick="toggleLat('l2')">Tampilkan / Sembunyikan Jawaban</button>
+  </section>
+
+  <!-- LATIHAN 3 -->
+  <section id="latihan3">
+    <div class="section-eyebrow">Latihan 3</div>
+    <h2>Buat kalimat dari gambar <em>(Pola C · と)</em></h2>
+    <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-bottom:1.2rem;">
+      <span style="font-weight:600;">例。</span>
+      <span class="jp-text" style="font-size:0.95rem;"> たかぎさんはバスでホテルへいきます。</span>
+      <div class="romaji" style="font-size:0.75rem; color:var(--abu-sedang);">※ Gunakan pola C dengan partikel と</div>
+    </div>
+    <div class="lat-grid">
+      <div class="lat-cell">
+        <div class="lat-num">例</div>
+        <div class="lat-scene">🚌 → 🏨</div>
+        <div class="lat-name">たかぎ</div>
+        <div class="lat-answer">たかぎさんはバスでホテルへいきます。<div class="romaji-small">Takagi-san wa basu de hoteru e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">1</div>
+        <div class="lat-scene">🚗 → ☕</div>
+        <div class="lat-name">こばやし</div>
+        <div class="lat-answer" id="l3a1">こばやしさんはかぞくとカフェへいきます。<div class="romaji-small">Kobayashi-san wa kazoku to kafe e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">2</div>
+        <div class="lat-scene">🚕 → 🏪</div>
+        <div class="lat-name">もりもと</div>
+        <div class="lat-answer" id="l3a2">もりもとさんはともだちとコンビニへいきます。<div class="romaji-small">Morimoto-san wa tomodachi to konbini e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">3</div>
+        <div class="lat-scene">🚃 → 📚</div>
+        <div class="lat-name">なかじま</div>
+        <div class="lat-answer" id="l3a3">なかじまさんはひとりでほんやへいきます。<div class="romaji-small">Nakajima-san wa hitori de honya e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">4</div>
+        <div class="lat-scene">🏍️ → 🏦</div>
+        <div class="lat-name">やおとめ</div>
+        <div class="lat-answer" id="l3a4">やおとめさんはすずきさんとぎんこうへいきます。<div class="romaji-small">Yaotome-san wa Suzuki-san to ginkou e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">5</div>
+        <div class="lat-scene">🚲 → 🏢</div>
+        <div class="lat-name">おかもと</div>
+        <div class="lat-answer" id="l3a5">おかもとさんはかのじょとかいしゃへいきます。<div class="romaji-small">Okamoto-san wa kanojo to kaisha e ikimasu.</div></div>
+      </div>
+    </div>
+    <button class="reveal-btn" onclick="toggleLat('l3')">Tampilkan / Sembunyikan Jawaban</button>
+  </section>
+
+  <!-- LATIHAN 4 -->
+  <section id="latihan4">
+    <div class="section-eyebrow">Latihan 4</div>
+    <h2>Buat kalimat dari gambar <em>(Pola D · に)</em></h2>
+    <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-bottom:1.2rem;">
+      <span style="font-weight:600;">例。</span>
+      <span class="jp-text" style="font-size:0.95rem;"> わたしはじゅうにがつよっかにとしょかんへいきます。</span>
+      <div class="romaji">watashi wa juunigatsu yokka ni toshokan e ikimasu.</div>
+      <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya pergi ke perpustakaan pada tanggal 4 Desember.</div>
+    </div>
+    <div class="lat-grid">
+      <div class="lat-cell">
+        <div class="lat-num">例</div>
+        <div class="lat-scene">📚🏛️</div>
+        <div class="lat-name" style="font-size:0.75rem;">4 Desember</div>
+        <div class="lat-answer">わたしはじゅうにがつよっかにとしょかんへいきます。<div class="romaji-small">watashi wa juunigatsu yokka ni toshokan e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">1</div>
+        <div class="lat-scene">🏥</div>
+        <div class="lat-name" style="font-size:0.75rem;">5 Agustus</div>
+        <div class="lat-answer" id="l4a1">わたしははちがついつかにびょういんへいきます。<div class="romaji-small">watashi wa hachigatsu itsuka ni byouin e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">2</div>
+        <div class="lat-scene">🏖️</div>
+        <div class="lat-name" style="font-size:0.75rem;">6 Juni</div>
+        <div class="lat-answer" id="l4a2">わたしはろくがつむいかにうみへいきます。<div class="romaji-small">watashi wa rokugatsu muika ni umi e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">3</div>
+        <div class="lat-scene">📮</div>
+        <div class="lat-name" style="font-size:0.75rem;">5 Oktober</div>
+        <div class="lat-answer" id="l4a3">わたしはじゅうがついつかにゆうびんきょくへいきます。<div class="romaji-small">watashi wa juugatsu itsuka ni yuubinkyoku e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">4</div>
+        <div class="lat-scene">✈️🏢</div>
+        <div class="lat-name" style="font-size:0.75rem;">2 November</div>
+        <div class="lat-answer" id="l4a4">わたしはじゅういちがつふつかにくうこうへいきます。<div class="romaji-small">watashi wa juuichigatsu futsuka ni kuukou e ikimasu.</div></div>
+      </div>
+      <div class="lat-cell">
+        <div class="lat-num">5</div>
+        <div class="lat-scene">🗾</div>
+        <div class="lat-name" style="font-size:0.75rem;">23 Januari</div>
+        <div class="lat-answer" id="l4a5">わたしはいちがつにじゅうさんにちににほんへいきます。<div class="romaji-small">watashi wa ichigatsu nijuu san nichi ni nihon e ikimasu.</div></div>
+      </div>
+    </div>
+    <button class="reveal-btn" onclick="toggleLat('l4')">Tampilkan / Sembunyikan Jawaban</button>
+  </section>
+
+  <!-- LATIHAN 5 -->
+  <section id="latihan5">
+    <div class="section-eyebrow">Latihan 5</div>
+    <h2>Susun kata menjadi kalimat</h2>
+    <p style="font-size:0.85rem; color:var(--abu-sedang); margin-bottom:1.2rem;">Susunlah kata-kata berikut menjadi kalimat yang benar lalu terjemahkanlah ke dalam bahasa Indonesia!</p>
+    <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-bottom:1.2rem;">
+      <span style="font-weight:600;">例。</span> は・いきます・がっこう・わたし・へ
+      <div class="jp-text" style="font-size:0.95rem; margin-top:0.3rem;">わたしはがっこうへいきます。</div>
+      <div class="romaji">watashi wa gakkou e ikimasu.</div>
+      <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya pergi ke sekolah.</div>
+    </div>
+
+    <div id="lat5-container">
+      <!-- Q1 -->
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">1.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">で・くるま・エドワードさん・おおさか・いきます・は・へ</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">エドワードさんはくるまでおおさかへいきます。</div>
+          <div class="romaji">Edowādo-san wa kuruma de Ōsaka e ikimasu.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Edward pergi ke Osaka dengan mobil.</div>
+        </div>
+      </div>
+      <!-- Q2 -->
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">2.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">きました・にほん・きょねん・は・カリナさん・へ</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">カリナさんはきょねんにほんへきました。</div>
+          <div class="romaji">Karina-san wa kyonen nihon e kimashita.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Karina datang ke Jepang tahun lalu.</div>
+        </div>
+      </div>
+      <!-- Q3 -->
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">3.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">は・ほんださん・わたし・いきます・かいしゃ・へ・と</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">わたしはほんださんとかいしゃへいきます。</div>
+          <div class="romaji">watashi wa Honda-san to kaisha e ikimasu.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya pergi ke kantor bersama Honda.</div>
+        </div>
+      </div>
+      <!-- Q4 -->
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">4.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">うみ・と・かぞく・ふね・いきます・で・は・わたし・へ</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">わたしはかぞくとふねでうみへいきます。</div>
+          <div class="romaji">watashi wa kazoku to fune de umi e ikimasu.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya pergi ke laut dengan kapal bersama keluarga.</div>
+        </div>
+      </div>
+      <!-- Q5 -->
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">5.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">インドネシア・に・は・ひこうき・へ・いちがつ・で・いきます・わたし</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">わたしはいちがつにひこうきでインドネシアへいきます。</div>
+          <div class="romaji">watashi wa ichigatsu ni hikouki de Indonesia e ikimasu.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya pergi ke Indonesia dengan pesawat pada bulan Januari.</div>
+        </div>
+      </div>
+    </div>
+    <button class="reveal-btn" onclick="toggleLat5()">Tampilkan / Sembunyikan Jawaban</button>
+  </section>
+
+  <!-- KUIS INTERAKTIF -->
+  <section id="kuis">
+    <div class="section-eyebrow">Kuis Interaktif</div>
+    <h2>Pilih partikel yang benar</h2>
+    <div class="quiz-box">
+      <div class="quiz-question" id="qJp"></div>
+      <div class="quiz-romaji" id="qRomaji"></div>
+      <div class="quiz-target" id="qTarget"></div>
+      <div class="quiz-options" id="qOpts"></div>
+      <div class="qfb" id="qFb"></div>
+      <button class="qnext" id="qNext" onclick="nextQ()">Soal berikutnya →</button>
+    </div>
+  </section>
+
+  <!-- KOSAKATA BAB 6 -->
+  <section id="kosakata">
+    <div class="section-eyebrow">語彙リスト</div>
+    <h2>Kosakata Bab 6</h2>
+    <table class="vocab-table">
+      <thead><tr><th>#</th><th>Kata</th><th>Kanji</th><th>Arti</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>いきます <span class="romaji">(ikimasu)</span></td><td>行きます</td><td>Pergi</td></tr>
+        <tr><td>2</td><td>きます <span class="romaji">(kimasu)</span></td><td>来ます</td><td>Datang</td></tr>
+        <tr><td>3</td><td>かえります <span class="romaji">(kaerimasu)</span></td><td>帰ります</td><td>Pulang</td></tr>
+        <tr><td>4</td><td>がっこう <span class="romaji">(gakkou)</span></td><td>学校</td><td>Sekolah</td></tr>
+        <tr><td>5</td><td>だいがく <span class="romaji">(daigaku)</span></td><td>大学</td><td>Universitas</td></tr>
+        <tr><td>6</td><td>かいしゃ <span class="romaji">(kaisha)</span></td><td>会社</td><td>Perusahaan</td></tr>
+        <tr><td>7</td><td>びょういん <span class="romaji">(byouin)</span></td><td>病院</td><td>Rumah sakit</td></tr>
+        <tr><td>8</td><td>ホテル <span class="romaji">(hoteru)</span></td><td>—</td><td>Hotel</td></tr>
+        <tr><td>9</td><td>レストラン <span class="romaji">(resutoran)</span></td><td>—</td><td>Restoran</td></tr>
+        <tr><td>10</td><td>こうえん <span class="romaji">(kouen)</span></td><td>公園</td><td>Taman</td></tr>
+        <tr><td>11</td><td>えき <span class="romaji">(eki)</span></td><td>駅</td><td>Stasiun</td></tr>
+        <tr><td>12</td><td>くうこう <span class="romaji">(kuukou)</span></td><td>空港</td><td>Bandara</td></tr>
+        <tr><td>13</td><td>みなと <span class="romaji">(minato)</span></td><td>港</td><td>Pelabuhan</td></tr>
+        <tr><td>14</td><td>どうぶつえん <span class="romaji">(doubutsuen)</span></td><td>動物園</td><td>Kebun binatang</td></tr>
+        <tr><td>15</td><td>バス <span class="romaji">(basu)</span></td><td>—</td><td>Bus</td></tr>
+        <tr><td>16</td><td>タクシー <span class="romaji">(takushii)</span></td><td>—</td><td>Taksi</td></tr>
+        <tr><td>17</td><td>ひこうき <span class="romaji">(hikouki)</span></td><td>飛行機</td><td>Pesawat</td></tr>
+        <tr><td>18</td><td>ふね <span class="romaji">(fune)</span></td><td>船</td><td>Kapal</td></tr>
+        <tr><td>19</td><td>でんしゃ <span class="romaji">(densha)</span></td><td>電車</td><td>Kereta api</td></tr>
+        <tr><td>20</td><td>じてんしゃ <span class="romaji">(jitensha)</span></td><td>自転車</td><td>Sepeda</td></tr>
+        <tr><td>21</td><td>バイク <span class="romaji">(baiku)</span></td><td>—</td><td>Motor</td></tr>
+        <tr><td>22</td><td>あるいて <span class="romaji">(aruite)</span></td><td>歩いて</td><td>Berjalan kaki</td></tr>
+        <tr><td>23</td><td>ひとり <span class="romaji">(hitori)</span></td><td>一人</td><td>Sendiri</td></tr>
+        <tr><td>24</td><td>ともだち <span class="romaji">(tomodachi)</span></td><td>友達</td><td>Teman</td></tr>
+        <tr><td>25</td><td>かぞく <span class="romaji">(kazoku)</span></td><td>家族</td><td>Keluarga</td></tr>
+        <tr><td>26</td><td>らいげつ <span class="romaji">(raigetsu)</span></td><td>来月</td><td>Bulan depan</td></tr>
+        <tr><td>27</td><td>きょねん <span class="romaji">(kyonen)</span></td><td>去年</td><td>Tahun lalu</td></tr>
+        <tr><td>28</td><td>らいねん <span class="romaji">(rainen)</span></td><td>来年</td><td>Tahun depan</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>Rumah Bahasa Surabaya · Belajar Bahasa Jepang jadi mudah dan menyenangkan</p>
+    <p style="margin-top:0.5rem;">BAB 6 – がっこうへいきます・Partikel へ・で・と・に</p>
+  </footer>
+</main>
+
+<script>
+  // Toggle latihan 1–4
+  function toggleLat(prefix) {
+    let answers = document.querySelectorAll('[id^="' + prefix + 'a"]');
+    if (answers.length === 0) {
+      // fallback: toggle all .lat-answer in the section
+      let btn = event.target;
+      let section = btn.closest('section');
+      let all = section.querySelectorAll('.lat-answer');
+      let hidden = all[0].style.display !== 'block';
+      all.forEach(a => a.style.display = hidden ? 'block' : 'none');
+      return;
+    }
+    let hidden = answers[0].style.display !== 'block';
+    answers.forEach(a => a.style.display = hidden ? 'block' : 'none');
+  }
+
+  // Toggle latihan 5
+  function toggleLat5() {
+    let answers = document.querySelectorAll('.lat5-answer');
+    let hidden = answers[0].style.display !== 'block';
+    answers.forEach(a => a.style.display = hidden ? 'block' : 'none');
+  }
+
+  // KUIS
+  const quizData = [
+    {
+      prompt: 'がっこう ___ いきます',
+      romaji: 'gakkou ___ ikimasu',
+      target: 'Pilih partikel yang tepat untuk menyatakan TUJUAN',
+      opts: ['へ', 'で', 'と', 'に'],
+      ans: 0,
+      ex: '「へ」menyatakan arah/tujuan → がっこうへいきます (pergi ke sekolah)'
+    },
+    {
+      prompt: 'バス ___ かえります',
+      romaji: 'basu ___ kaerimasu',
+      target: 'Pilih partikel yang tepat untuk menyatakan ALAT TRANSPORTASI',
+      opts: ['へ', 'で', 'と', 'に'],
+      ans: 1,
+      ex: '「で」menyatakan alat/transportasi → バスでかえります (pulang dengan bus)'
+    },
+    {
+      prompt: 'ともだち ___ えいがかんへいきます',
+      romaji: 'tomodachi ___ eigakan e ikimasu',
+      target: 'Pilih partikel yang tepat untuk menyatakan TEMAN',
+      opts: ['へ', 'で', 'と', 'に'],
+      ans: 2,
+      ex: '「と」menyatakan bersama siapa → ともだちといきます (pergi bersama teman)'
+    },
+    {
+      prompt: 'ろくがつ ___ にほんへいきます',
+      romaji: 'rokugatsu ___ Nihon e ikimasu',
+      target: 'Pilih partikel yang tepat untuk menyatakan WAKTU (bulan)',
+      opts: ['へ', 'で', 'と', 'に'],
+      ans: 3,
+      ex: '「に」menyatakan waktu spesifik → ろくがつにいきます (pergi pada bulan Juni)'
+    },
+    {
+      prompt: 'ひとり ___ いきます',
+      romaji: 'hitori ___ ikimasu',
+      target: 'Pilih partikel yang tepat untuk "seorang diri"',
+      opts: ['と', 'で', 'へ', 'に'],
+      ans: 1,
+      ex: '「ひとりで」bukan ひとりと → ひとりでいきます (pergi seorang diri)'
+    },
+    {
+      prompt: 'あるいて ___ がっこうへいきます',
+      romaji: 'aruite ___ gakkou e ikimasu',
+      target: 'Jika berjalan kaki, partikel apa yang digunakan setelah あるいて?',
+      opts: ['untuk あるいて: tidak ada partikel', 'で', 'と', 'へ'],
+      ans: 0,
+      ex: 'あるいて tidak diikuti partikel「で」karena bukan kata benda → あるいていきます'
+    },
+    {
+      prompt: 'あした ___ こうえんへいきます',
+      romaji: 'ashita ___ kouen e ikimasu',
+      target: 'Apakah「あした」boleh diikuti partikel「に」?',
+      opts: ['Tidak boleh (あした に は salah)', 'Boleh → あしたにいきます', 'Boleh → あしたでいきます', 'Boleh → あしたへいきます'],
+      ans: 0,
+      ex: 'あした、きのう、らいげつ dll. tidak boleh diikuti「に」→ あしたこうえんへいきます'
+    },
+    {
+      prompt: 'なんがつ',
+      romaji: 'nangatsu',
+      target: 'Apa arti なんがつ?',
+      opts: ['Bulan apa?', 'Tanggal berapa?', 'Tahun berapa?', 'Hari apa?'],
+      ans: 0,
+      ex: 'なん＝apa/berapa, がつ＝bulan → なんがつ = bulan apa?'
+    },
+    {
+      prompt: 'よっか',
+      romaji: 'yokka',
+      target: 'よっか = tanggal berapa?',
+      opts: ['Tanggal 4', 'Tanggal 8', 'Tanggal 14', 'Tanggal 40'],
+      ans: 0,
+      ex: 'よっか = tanggal 4 (bacaan khusus, bukan よんにち)'
+    }
+  ];
+
+  let curQ = 0, score = 0, answered = false;
+
+  function renderQuiz() {
+    answered = false;
+    let q = quizData[curQ];
+    document.getElementById('qJp').innerText = q.prompt;
+    document.getElementById('qRomaji').innerText = q.romaji;
+    document.getElementById('qTarget').innerHTML = `❓ ${q.target}`;
+    let optsDiv = document.getElementById('qOpts');
+    optsDiv.innerHTML = '';
+    q.opts.forEach((opt, i) => {
+      let btn = document.createElement('button');
+      btn.className = 'qbtn';
+      btn.innerText = opt;
+      btn.onclick = () => checkAns(i, btn);
+      optsDiv.appendChild(btn);
+    });
+    document.getElementById('qFb').innerHTML = '';
+    document.getElementById('qFb').className = 'qfb';
+    document.getElementById('qNext').className = 'qnext';
+  }
+
+  function checkAns(idx, btn) {
+    if (answered) return;
+    answered = true;
+    let q = quizData[curQ];
+    let all = document.querySelectorAll('.qbtn');
+    let fb = document.getElementById('qFb');
+    if (idx === q.ans) {
+      btn.classList.add('correct');
+      score++;
+      fb.innerHTML = '✓ Benar! ' + q.ex;
+      fb.className = 'qfb show ok';
+    } else {
+      btn.classList.add('wrong');
+      all[q.ans].classList.add('correct');
+      fb.innerHTML = '✗ Kurang tepat. ' + q.ex;
+      fb.className = 'qfb show ng';
+    }
+    let nx = document.getElementById('qNext');
+    nx.className = 'qnext show';
+    nx.innerText = (curQ < quizData.length-1) ? 'Soal berikutnya →' : `Selesai! Nilai: ${score}/${quizData.length}`;
+  }
+
+  function nextQ() {
+    if (curQ < quizData.length-1) {
+      curQ++;
+      renderQuiz();
+    } else {
+      document.getElementById('qFb').innerHTML = `お疲れ様！ Nilai akhir: ${score}/${quizData.length}`;
+      document.getElementById('qFb').className = 'qfb show ok';
+      document.getElementById('qNext').className = 'qnext';
+    }
+  }
+
+  window.onload = function() { renderQuiz(); };
+</script>
+</body>
+</html>
