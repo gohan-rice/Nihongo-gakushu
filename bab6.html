@@ -270,8 +270,17 @@
       font-family: 'Shippori Mincho', serif;
       font-weight: 700;
       font-size: 0.95rem;
-      margin: 0.3rem 0;
+      margin: 0.3rem 0 0.1rem;
     }
+    /* ===== ROMAJI BARU DI BAWAH NAMA ===== */
+    .lat-romaji {
+      font-size: 0.65rem;
+      color: var(--abu-sedang);
+      font-family: 'DM Sans', sans-serif;
+      margin-bottom: 0.2rem;
+      font-style: italic;
+    }
+    /* ====================================== */
     .lat-answer {
       font-size: 0.75rem;
       color: var(--merah);
@@ -463,9 +472,9 @@
       <div style="margin-top:1.2rem; padding: 1rem 1.5rem; border: 1px solid var(--border); background: var(--abu-debu); max-width: 520px;">
         <div style="font-weight:700; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.6rem;">Can Do :</div>
         <div style="font-size:0.85rem; color:var(--abu-gelap); line-height:1.8;">
-          1. Mahasiswa mampu menyatakan perpidahan tempat<br>
-          2. Mahasiswa mampu menyatakan transportasi yang digunakan saat berpindah tempat<br>
-          3. Mahasiswa mampu menyatakan dengan siapa dan kapan melakukan perpindahan tempat
+          1. Pembelajar mampu menyatakan perpidahan tempat<br>
+          2. Pembelajar mampu menyatakan transportasi yang digunakan saat berpindah tempat<br>
+          3. Pembelajar mampu menyatakan dengan siapa dan kapan melakukan perpindahan tempat
         </div>
       </div>
     </div>
@@ -786,7 +795,7 @@
     </ul>
   </section>
 
-  <!-- LATIHAN 1 -->
+  <!-- ==================== LATIHAN 1 ==================== -->
   <section id="latihan1">
     <div class="section-eyebrow">Latihan 1</div>
     <h2>Buat kalimat dari gambar <em>(Pola A)</em></h2>
@@ -796,47 +805,66 @@
       <div class="romaji">Matsumoto-san wa ie e ikimasu.</div>
     </div>
     <div class="lat-grid">
+
+      <!-- 例 -->
       <div class="lat-cell">
         <div class="lat-num">例</div>
         <div class="lat-scene">🚶 → 🏠</div>
         <div class="lat-name">まつもと</div>
+        <div class="lat-romaji">Matsumoto</div>
         <div class="lat-answer">まつもとさんはいえへいきます。<div class="romaji-small">Matsumoto-san wa ie e ikimasu.</div></div>
       </div>
-      <div class="lat-cell" id="l1c1">
+
+      <!-- 1 -->
+      <div class="lat-cell">
         <div class="lat-num">1</div>
         <div class="lat-scene">🚶‍♀️ → 🎬</div>
         <div class="lat-name">みやむら</div>
+        <div class="lat-romaji">Miyamura</div>
         <div class="lat-answer" id="l1a1">みやむらさんはえいがかんへいきます。<div class="romaji-small">Miyamura-san wa eigakan e ikimasu.</div></div>
       </div>
+
+      <!-- 2 -->
       <div class="lat-cell">
         <div class="lat-num">2</div>
         <div class="lat-scene">🏃‍♀️ → 🛝</div>
         <div class="lat-name">ゆきちゃん</div>
+        <div class="lat-romaji">Yuki-chan</div>
         <div class="lat-answer" id="l1a2">ゆきちゃんはこうえんへいきます。<div class="romaji-small">Yuki-chan wa kouen e ikimasu.</div></div>
       </div>
+
+      <!-- 3 -->
       <div class="lat-cell">
         <div class="lat-num">3</div>
         <div class="lat-scene">💼 → ✈️</div>
         <div class="lat-name">やまだ</div>
+        <div class="lat-romaji">Yamada</div>
         <div class="lat-answer" id="l1a3">やまださんはくうこうへいきます。<div class="romaji-small">Yamada-san wa kuukou e ikimasu.</div></div>
       </div>
+
+      <!-- 4 -->
       <div class="lat-cell">
         <div class="lat-num">4</div>
         <div class="lat-scene">🧒 → 🦁</div>
         <div class="lat-name">けんたくん</div>
+        <div class="lat-romaji">Kenta-kun</div>
         <div class="lat-answer" id="l1a4">けんたくんはどうぶつえんへいきます。<div class="romaji-small">Kenta-kun wa doubutsuen e ikimasu.</div></div>
       </div>
+
+      <!-- 5 -->
       <div class="lat-cell">
         <div class="lat-num">5</div>
         <div class="lat-scene">👩‍💼 → 🏥</div>
         <div class="lat-name">まきの</div>
+        <div class="lat-romaji">Makino</div>
         <div class="lat-answer" id="l1a5">まきのさんはびょういんへいきます。<div class="romaji-small">Makino-san wa byouin e ikimasu.</div></div>
       </div>
+
     </div>
     <button class="reveal-btn" onclick="toggleLat('l1')">Tampilkan / Sembunyikan Jawaban</button>
   </section>
 
-  <!-- LATIHAN 2 -->
+  <!-- ==================== LATIHAN 2 ==================== -->
   <section id="latihan2">
     <div class="section-eyebrow">Latihan 2</div>
     <h2>Buat kalimat dari gambar <em>(Pola B)</em></h2>
@@ -846,47 +874,66 @@
       <div class="romaji">Takagi-san wa basu de hoteru e ikimasu.</div>
     </div>
     <div class="lat-grid">
+
+      <!-- 例 -->
       <div class="lat-cell">
         <div class="lat-num">例</div>
         <div class="lat-scene">🚌 → 🏨</div>
         <div class="lat-name">たかぎ</div>
+        <div class="lat-romaji">Takagi</div>
         <div class="lat-answer">たかぎさんはバスでホテルへいきます。<div class="romaji-small">Takagi-san wa basu de hoteru e ikimasu.</div></div>
       </div>
+
+      <!-- 1 -->
       <div class="lat-cell">
         <div class="lat-num">1</div>
         <div class="lat-scene">🚗 → ☕</div>
         <div class="lat-name">こばやし</div>
+        <div class="lat-romaji">Kobayashi</div>
         <div class="lat-answer" id="l2a1">こばやしさんはくるまでカフェへいきます。<div class="romaji-small">Kobayashi-san wa kuruma de kafe e ikimasu.</div></div>
       </div>
+
+      <!-- 2 -->
       <div class="lat-cell">
         <div class="lat-num">2</div>
         <div class="lat-scene">🚕 → 🏪</div>
         <div class="lat-name">もりもと</div>
+        <div class="lat-romaji">Morimoto</div>
         <div class="lat-answer" id="l2a2">もりもとさんはタクシーでコンビニへいきます。<div class="romaji-small">Morimoto-san wa takushii de konbini e ikimasu.</div></div>
       </div>
+
+      <!-- 3 -->
       <div class="lat-cell">
         <div class="lat-num">3</div>
         <div class="lat-scene">🚃 → 📚</div>
         <div class="lat-name">なかじま</div>
+        <div class="lat-romaji">Nakajima</div>
         <div class="lat-answer" id="l2a3">なかじまさんはでんしゃでほんやへいきます。<div class="romaji-small">Nakajima-san wa densha de honya e ikimasu.</div></div>
       </div>
+
+      <!-- 4 -->
       <div class="lat-cell">
         <div class="lat-num">4</div>
         <div class="lat-scene">🏍️ → 🏦</div>
         <div class="lat-name">やおとめ</div>
+        <div class="lat-romaji">Yaotome</div>
         <div class="lat-answer" id="l2a4">やおとめさんはバイクでぎんこうへいきます。<div class="romaji-small">Yaotome-san wa baiku de ginkou e ikimasu.</div></div>
       </div>
+
+      <!-- 5 -->
       <div class="lat-cell">
         <div class="lat-num">5</div>
         <div class="lat-scene">🚲 → 🏢</div>
         <div class="lat-name">おかもと</div>
+        <div class="lat-romaji">Okamoto</div>
         <div class="lat-answer" id="l2a5">おかもとさんはじてんしゃでかいしゃへいきます。<div class="romaji-small">Okamoto-san wa jitensha de kaisha e ikimasu.</div></div>
       </div>
+
     </div>
     <button class="reveal-btn" onclick="toggleLat('l2')">Tampilkan / Sembunyikan Jawaban</button>
   </section>
 
-  <!-- LATIHAN 3 -->
+  <!-- ==================== LATIHAN 3 ==================== -->
   <section id="latihan3">
     <div class="section-eyebrow">Latihan 3</div>
     <h2>Buat kalimat dari gambar <em>(Pola C · と)</em></h2>
@@ -896,47 +943,66 @@
       <div class="romaji" style="font-size:0.75rem; color:var(--abu-sedang);">※ Gunakan pola C dengan partikel と</div>
     </div>
     <div class="lat-grid">
+
+      <!-- 例 -->
       <div class="lat-cell">
         <div class="lat-num">例</div>
         <div class="lat-scene">🚌 → 🏨</div>
         <div class="lat-name">たかぎ</div>
+        <div class="lat-romaji">Takagi</div>
         <div class="lat-answer">たかぎさんはバスでホテルへいきます。<div class="romaji-small">Takagi-san wa basu de hoteru e ikimasu.</div></div>
       </div>
+
+      <!-- 1 -->
       <div class="lat-cell">
         <div class="lat-num">1</div>
         <div class="lat-scene">🚗 → ☕</div>
         <div class="lat-name">こばやし</div>
+        <div class="lat-romaji">Kobayashi</div>
         <div class="lat-answer" id="l3a1">こばやしさんはかぞくとカフェへいきます。<div class="romaji-small">Kobayashi-san wa kazoku to kafe e ikimasu.</div></div>
       </div>
+
+      <!-- 2 -->
       <div class="lat-cell">
         <div class="lat-num">2</div>
         <div class="lat-scene">🚕 → 🏪</div>
         <div class="lat-name">もりもと</div>
+        <div class="lat-romaji">Morimoto</div>
         <div class="lat-answer" id="l3a2">もりもとさんはともだちとコンビニへいきます。<div class="romaji-small">Morimoto-san wa tomodachi to konbini e ikimasu.</div></div>
       </div>
+
+      <!-- 3 -->
       <div class="lat-cell">
         <div class="lat-num">3</div>
         <div class="lat-scene">🚃 → 📚</div>
         <div class="lat-name">なかじま</div>
+        <div class="lat-romaji">Nakajima</div>
         <div class="lat-answer" id="l3a3">なかじまさんはひとりでほんやへいきます。<div class="romaji-small">Nakajima-san wa hitori de honya e ikimasu.</div></div>
       </div>
+
+      <!-- 4 -->
       <div class="lat-cell">
         <div class="lat-num">4</div>
         <div class="lat-scene">🏍️ → 🏦</div>
         <div class="lat-name">やおとめ</div>
+        <div class="lat-romaji">Yaotome</div>
         <div class="lat-answer" id="l3a4">やおとめさんはすずきさんとぎんこうへいきます。<div class="romaji-small">Yaotome-san wa Suzuki-san to ginkou e ikimasu.</div></div>
       </div>
+
+      <!-- 5 -->
       <div class="lat-cell">
         <div class="lat-num">5</div>
         <div class="lat-scene">🚲 → 🏢</div>
         <div class="lat-name">おかもと</div>
+        <div class="lat-romaji">Okamoto</div>
         <div class="lat-answer" id="l3a5">おかもとさんはかのじょとかいしゃへいきます。<div class="romaji-small">Okamoto-san wa kanojo to kaisha e ikimasu.</div></div>
       </div>
+
     </div>
     <button class="reveal-btn" onclick="toggleLat('l3')">Tampilkan / Sembunyikan Jawaban</button>
   </section>
 
-  <!-- LATIHAN 4 -->
+  <!-- ==================== LATIHAN 4 ==================== -->
   <section id="latihan4">
     <div class="section-eyebrow">Latihan 4</div>
     <h2>Buat kalimat dari gambar <em>(Pola D · に)</em></h2>
@@ -947,47 +1013,66 @@
       <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya pergi ke perpustakaan pada tanggal 4 Desember.</div>
     </div>
     <div class="lat-grid">
+
+      <!-- 例 -->
       <div class="lat-cell">
         <div class="lat-num">例</div>
         <div class="lat-scene">📚🏛️</div>
         <div class="lat-name" style="font-size:0.75rem;">4 Desember</div>
+        <div class="lat-romaji">juunigatsu yokka</div>
         <div class="lat-answer">わたしはじゅうにがつよっかにとしょかんへいきます。<div class="romaji-small">watashi wa juunigatsu yokka ni toshokan e ikimasu.</div></div>
       </div>
+
+      <!-- 1 -->
       <div class="lat-cell">
         <div class="lat-num">1</div>
         <div class="lat-scene">🏥</div>
         <div class="lat-name" style="font-size:0.75rem;">5 Agustus</div>
+        <div class="lat-romaji">hachigatsu itsuka</div>
         <div class="lat-answer" id="l4a1">わたしははちがついつかにびょういんへいきます。<div class="romaji-small">watashi wa hachigatsu itsuka ni byouin e ikimasu.</div></div>
       </div>
+
+      <!-- 2 -->
       <div class="lat-cell">
         <div class="lat-num">2</div>
         <div class="lat-scene">🏖️</div>
         <div class="lat-name" style="font-size:0.75rem;">6 Juni</div>
+        <div class="lat-romaji">rokugatsu muika</div>
         <div class="lat-answer" id="l4a2">わたしはろくがつむいかにうみへいきます。<div class="romaji-small">watashi wa rokugatsu muika ni umi e ikimasu.</div></div>
       </div>
+
+      <!-- 3 -->
       <div class="lat-cell">
         <div class="lat-num">3</div>
         <div class="lat-scene">📮</div>
         <div class="lat-name" style="font-size:0.75rem;">5 Oktober</div>
+        <div class="lat-romaji">juugatsu itsuka</div>
         <div class="lat-answer" id="l4a3">わたしはじゅうがついつかにゆうびんきょくへいきます。<div class="romaji-small">watashi wa juugatsu itsuka ni yuubinkyoku e ikimasu.</div></div>
       </div>
+
+      <!-- 4 -->
       <div class="lat-cell">
         <div class="lat-num">4</div>
         <div class="lat-scene">✈️🏢</div>
         <div class="lat-name" style="font-size:0.75rem;">2 November</div>
+        <div class="lat-romaji">juuichigatsu futsuka</div>
         <div class="lat-answer" id="l4a4">わたしはじゅういちがつふつかにくうこうへいきます。<div class="romaji-small">watashi wa juuichigatsu futsuka ni kuukou e ikimasu.</div></div>
       </div>
+
+      <!-- 5 -->
       <div class="lat-cell">
         <div class="lat-num">5</div>
         <div class="lat-scene">🗾</div>
         <div class="lat-name" style="font-size:0.75rem;">23 Januari</div>
+        <div class="lat-romaji">ichigatsu nijuusan nichi</div>
         <div class="lat-answer" id="l4a5">わたしはいちがつにじゅうさんにちににほんへいきます。<div class="romaji-small">watashi wa ichigatsu nijuu san nichi ni nihon e ikimasu.</div></div>
       </div>
+
     </div>
     <button class="reveal-btn" onclick="toggleLat('l4')">Tampilkan / Sembunyikan Jawaban</button>
   </section>
 
-  <!-- LATIHAN 5 -->
+  <!-- ==================== LATIHAN 5 ==================== -->
   <section id="latihan5">
     <div class="section-eyebrow">Latihan 5</div>
     <h2>Susun kata menjadi kalimat</h2>
@@ -1000,56 +1085,67 @@
     </div>
 
     <div id="lat5-container">
+
       <!-- Q1 -->
       <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
         <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">1.</div>
         <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">で・くるま・エドワードさん・おおさか・いきます・は・へ</div>
+        <div class="romaji" style="font-size:0.68rem; color:var(--abu-sedang); margin-top:0.15rem;">de · kuruma · Edowādo-san · Ōsaka · ikimasu · wa · e</div>
         <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
           <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">エドワードさんはくるまでおおさかへいきます。</div>
           <div class="romaji">Edowādo-san wa kuruma de Ōsaka e ikimasu.</div>
           <div style="font-size:0.8rem; color:var(--abu-sedang);">Edward pergi ke Osaka dengan mobil.</div>
         </div>
       </div>
+
       <!-- Q2 -->
       <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
         <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">2.</div>
         <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">きました・にほん・きょねん・は・カリナさん・へ</div>
+        <div class="romaji" style="font-size:0.68rem; color:var(--abu-sedang); margin-top:0.15rem;">kimashita · nihon · kyonen · wa · Karina-san · e</div>
         <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
           <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">カリナさんはきょねんにほんへきました。</div>
           <div class="romaji">Karina-san wa kyonen nihon e kimashita.</div>
           <div style="font-size:0.8rem; color:var(--abu-sedang);">Karina datang ke Jepang tahun lalu.</div>
         </div>
       </div>
+
       <!-- Q3 -->
       <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
         <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">3.</div>
         <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">は・ほんださん・わたし・いきます・かいしゃ・へ・と</div>
+        <div class="romaji" style="font-size:0.68rem; color:var(--abu-sedang); margin-top:0.15rem;">wa · Honda-san · watashi · ikimasu · kaisha · e · to</div>
         <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
           <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">わたしはほんださんとかいしゃへいきます。</div>
           <div class="romaji">watashi wa Honda-san to kaisha e ikimasu.</div>
           <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya pergi ke kantor bersama Honda.</div>
         </div>
       </div>
+
       <!-- Q4 -->
       <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
         <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">4.</div>
         <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">うみ・と・かぞく・ふね・いきます・で・は・わたし・へ</div>
+        <div class="romaji" style="font-size:0.68rem; color:var(--abu-sedang); margin-top:0.15rem;">umi · to · kazoku · fune · ikimasu · de · wa · watashi · e</div>
         <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
           <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">わたしはかぞくとふねでうみへいきます。</div>
           <div class="romaji">watashi wa kazoku to fune de umi e ikimasu.</div>
           <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya pergi ke laut dengan kapal bersama keluarga.</div>
         </div>
       </div>
+
       <!-- Q5 -->
       <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
         <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">5.</div>
         <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">インドネシア・に・は・ひこうき・へ・いちがつ・で・いきます・わたし</div>
+        <div class="romaji" style="font-size:0.68rem; color:var(--abu-sedang); margin-top:0.15rem;">Indonesia · ni · wa · hikouki · e · ichigatsu · de · ikimasu · watashi</div>
         <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
           <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">わたしはいちがつにひこうきでインドネシアへいきます。</div>
           <div class="romaji">watashi wa ichigatsu ni hikouki de Indonesia e ikimasu.</div>
           <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya pergi ke Indonesia dengan pesawat pada bulan Januari.</div>
         </div>
       </div>
+
     </div>
     <button class="reveal-btn" onclick="toggleLat5()">Tampilkan / Sembunyikan Jawaban</button>
   </section>
@@ -1118,7 +1214,6 @@
   function toggleLat(prefix) {
     let answers = document.querySelectorAll('[id^="' + prefix + 'a"]');
     if (answers.length === 0) {
-      // fallback: toggle all .lat-answer in the section
       let btn = event.target;
       let section = btn.closest('section');
       let all = section.querySelectorAll('.lat-answer');
