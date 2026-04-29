@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAB 21 · たばこをすってはいけません | Rumah Bahasa SBY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=Shippori+Mincho:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --merah: #C0392B;
+      --merah-muda: rgba(192,57,43,0.08);
+      --putih: #FFFFFF;
+      --abu-debu: #F4F2F0;
+      --abu-gelap: #3A3A3A;
+      --abu-sedang: #6E6E6E;
+      --abu-muda: #DDDAD7;
+      --gold: #B78A4B;
+      --border: #E0DDD9;
+      --biru: #3B7DBF;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--putih);
+      color: var(--abu-gelap);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--putih);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100;
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--merah);
+      letter-spacing: 0.03em;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a {
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--abu-sedang);
+      text-decoration: none;
+      white-space: nowrap;
+      padding: 0.2rem 0;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover { color: var(--merah); border-bottom-color: var(--merah); }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      scroll-margin-top: 70px;
+    }
+
+    .section-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--merah);
+      margin-bottom: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .section-eyebrow::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--merah);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--abu-gelap);
+      margin-bottom: 1.2rem;
+      line-height: 1.2;
+    }
+    h2 em { color: var(--merah); font-style: normal; }
+
+    .card-white {
+      background: var(--putih);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+
+    .jp-text {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.9;
+      color: var(--abu-gelap);
+    }
+    .romaji {
+      font-size: 0.7rem;
+      color: var(--abu-sedang);
+      letter-spacing: 0.02em;
+      margin-top: 0.1rem;
+    }
+    .id-text {
+      font-size: 0.85rem;
+      color: var(--abu-sedang);
+      margin-top: 0.4rem;
+    }
+
+    /* Pola table */
+    .pola-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    .pola-table th {
+      background: var(--biru);
+      color: white;
+      font-weight: 600;
+      font-size: 0.75rem;
+      padding: 0.6rem 1rem;
+      text-align: center;
+    }
+    .pola-table td {
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--border);
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    .pola-table .particle-col {
+      font-weight: 700;
+      color: var(--merah);
+      font-size: 1.1rem;
+    }
+    .pola-table .trans-row td {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      color: var(--abu-sedang);
+      font-style: italic;
+    }
+
+    /* Example list */
+    .ex-list { list-style: none; }
+    .ex-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .ex-item:last-child { border-bottom: none; }
+    .ex-num {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--merah);
+      min-width: 1.5rem;
+    }
+    .ex-jp {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1.7;
+    }
+    .ex-romaji { font-size: 0.7rem; color: var(--abu-sedang); margin-top: 0.1rem; }
+    .ex-id { font-size: 0.8rem; color: var(--abu-sedang); margin-top: 0.2rem; }
+
+    /* Note box */
+    .note-box {
+      background: var(--abu-debu);
+      padding: 1.2rem 1.5rem;
+      border-left: 4px solid var(--merah);
+      margin: 1.5rem 0;
+    }
+    .note-title { font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem; }
+
+    /* Latihan grid - image based */
+    .lat-img-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.6rem;
+      margin: 1.5rem 0;
+    }
+    .lat-img-cell {
+      border: 1px solid var(--border);
+      padding: 0.8rem 0.6rem;
+      text-align: center;
+      background: var(--putih);
+    }
+    .lat-num {
+      font-size: 0.6rem;
+      font-weight: 700;
+      color: var(--abu-sedang);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    .lat-img-cell img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 0.4rem;
+    }
+    .lat-answer {
+      font-size: 0.8rem;
+      color: var(--merah);
+      display: none;
+      margin-top: 0.5rem;
+      font-family: 'Shippori Mincho', serif;
+      line-height: 1.5;
+    }
+    .lat-answer .romaji-small {
+      font-size: 0.65rem;
+      color: var(--abu-sedang);
+      margin-top: 0.1rem;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    /* Latihan text grid */
+    .lat-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 0.8rem;
+      margin: 1.5rem 0;
+    }
+    .lat-cell {
+      border: 1px solid var(--border);
+      padding: 1rem 0.7rem;
+      text-align: center;
+      background: var(--putih);
+    }
+    .lat-scene { font-size: 2.2rem; margin: 0.4rem 0; }
+
+    .reveal-btn {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1.2rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--abu-gelap);
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 0.8rem;
+    }
+    .reveal-btn:hover { border-color: var(--merah); color: var(--merah); }
+
+    /* Vocab table */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .vocab-table th {
+      text-align: left;
+      font-weight: 500;
+      color: var(--abu-sedang);
+      border-bottom: 2px solid var(--border);
+      padding: 0.5rem 0.2rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .vocab-table td {
+      padding: 0.7rem 0.2rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    .vocab-table td:nth-child(2) { font-family: 'Shippori Mincho', serif; font-weight: 700; color: var(--merah); }
+    .vocab-table td:nth-child(3) { color: var(--abu-sedang); font-size: 0.75rem; }
+    .vocab-table .romaji { font-size: 0.7rem; color: var(--abu-sedang); font-family: 'DM Sans', sans-serif; margin-left: 0.3rem; font-weight: 400; }
+
+    /* Kuis */
+    .quiz-box {
+      background: var(--abu-debu);
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .quiz-question {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .quiz-romaji { font-size: 0.8rem; color: var(--abu-sedang); margin-bottom: 0.4rem; }
+    .quiz-target { font-size: 1rem; color: var(--abu-gelap); margin-bottom: 1rem; }
+    .quiz-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .qbtn {
+      background: var(--putih);
+      border: 1px solid var(--border);
+      padding: 0.7rem;
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+    .qbtn:hover { border-color: var(--merah); background: var(--merah-muda); }
+    .qbtn.correct { background: #E2F0E6; border-color: #2D7A5F; color: #2D7A5F; }
+    .qbtn.wrong { background: #FEF0EF; border-color: var(--merah); color: var(--merah); }
+    .qfb { padding: 0.7rem 1rem; font-size: 0.8rem; display: none; }
+    .qfb.show { display: block; }
+    .qfb.ok { background: #E2F0E6; color: #2D7A5F; }
+    .qfb.ng { background: #FEF0EF; color: var(--merah); }
+    .qnext {
+      background: var(--merah);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      cursor: pointer;
+      display: none;
+    }
+    .qnext.show { display: inline-block; }
+
+    /* Pattern diagram */
+    .pattern-arrow {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1rem 0 1.5rem;
+    }
+    .pattern-box {
+      border: 2px solid var(--biru);
+      padding: 0.5rem 1.2rem;
+      font-family: 'Shippori Mincho', serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--biru);
+      background: #EEF4FB;
+    }
+    .pattern-desc {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--abu-gelap);
+    }
+    .arrow-icon { font-size: 1.5rem; color: var(--abu-sedang); }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.7rem;
+      color: var(--abu-sedang);
+    }
+
+    @media (max-width: 650px) {
+      .lat-img-grid { grid-template-columns: 1fr 1fr; }
+      .lat-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { gap: 0.8rem; }
+      .quiz-options { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Rumah Bahasa SBY</div>
+  <div class="nav-links">
+    <a href="#pola-a">Pola A (はいけません)</a>
+    <a href="#pola-b">Pola B (ています)</a>
+    <a href="#latihan1">Latihan 1</a>
+    <a href="#latihan2">Latihan 2</a>
+    <a href="#latihan3">Latihan 3</a>
+    <a href="#kuis">Kuis</a>
+    <a href="#kosakata">Kosakata</a>
+  </div>
+</nav>
+
+<main class="container">
+
+  <!-- COVER -->
+  <section id="cover" style="margin-bottom:2rem;">
+    <div style="padding: 3rem 0 1rem;">
+      <div class="section-eyebrow">Bab 21</div>
+      <h2 style="font-size:2.2rem; margin-bottom:0.5rem;">たばこをすってはいけません</h2>
+      <div class="romaji" style="font-size:0.9rem; margin-bottom:1.2rem;">Tabako wo sutte wa ikemasen</div>
+      <p style="font-size:1rem; color:var(--abu-sedang); max-width:640px;">Tidak boleh merokok. &nbsp;—&nbsp; Pelajari cara menyatakan larangan dan kondisi/kebiasaan menggunakan bentuk て.</p>
+      <div style="margin-top:1.2rem; padding: 1rem 1.5rem; border: 1px solid var(--border); background: var(--abu-debu); max-width: 520px;">
+        <div style="font-weight:700; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.6rem;">Can Do :</div>
+        <div style="font-size:0.85rem; color:var(--abu-gelap); line-height:1.8;">
+          1. Pembelajar mampu menyatakan larangan<br>
+          2. Pembelajar mampu menyatakan kondisi dan kebiasaan
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A. V-てはいけません -->
+  <section id="pola-a">
+    <div class="section-eyebrow">Pola A</div>
+    <h2>A. <em>V-てはいけません</em></h2>
+    <div class="card-white">
+      <div class="pattern-arrow">
+        <div class="pattern-box">V-てはいけません</div>
+        <div class="arrow-icon">➡</div>
+        <div class="pattern-desc">Berfungsi menyatakan larangan</div>
+      </div>
+      <table class="pola-table">
+        <thead>
+          <tr>
+            <th>Objek N</th>
+            <th>を</th>
+            <th>Predikat V-て</th>
+            <th>は</th>
+            <th>いけません</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="jp-text">たばこ</td>
+            <td class="jp-text">を</td>
+            <td class="jp-text">すって</td>
+            <td class="jp-text">は</td>
+            <td class="jp-text">いけません</td>
+          </tr>
+          <tr class="trans-row">
+            <td>Rokok</td>
+            <td>を</td>
+            <td>Mengisap</td>
+            <td>は</td>
+            <td>Tidak boleh</td>
+          </tr>
+          <tr>
+            <td colspan="5" style="font-family:'DM Sans'; font-style:italic; font-size:0.82rem; color:var(--abu-sedang); text-align:center;">Tidak boleh merokok.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="font-family:'Playfair Display'; font-size:1.1rem; font-weight:700; margin: 1.5rem 0 0.8rem;">Contoh Kalimat</h3>
+    <ul class="ex-list">
+      <li class="ex-item">
+        <span class="ex-num">1.</span>
+        <div>
+          <div class="ex-jp">ここであそんではいけません。</div>
+          <div class="ex-romaji">koko de asonde wa ikemasen.</div>
+          <div class="ex-id">Tidak boleh bermain di sini.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">2.</span>
+        <div>
+          <div class="ex-jp">はしってはいけません。</div>
+          <div class="ex-romaji">hashitte wa ikemasen.</div>
+          <div class="ex-id">Tidak boleh berlari.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">3.</span>
+        <div>
+          <div class="ex-jp">しゃしんをとってもいいですか。</div>
+          <div class="ex-romaji">shashin wo totte mo ii desu ka?</div>
+          <div class="ex-id">Bolehkah mengambil foto?</div>
+          <div class="ex-jp" style="margin-top:0.3rem;">．．．いいえ、しゃしんをとってはいけません。</div>
+          <div class="ex-romaji">...iie, shashin wo totte wa ikemasen.</div>
+          <div class="ex-id">Tidak, tidak boleh mengambil foto.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- B. V-ています -->
+  <section id="pola-b">
+    <div class="section-eyebrow">Pola B</div>
+    <h2>B. <em>V-ています</em></h2>
+    <div class="card-white">
+      <div class="pattern-arrow">
+        <div class="pattern-box">V-ています</div>
+        <div class="arrow-icon">➡</div>
+        <div class="pattern-desc">Berfungsi menyatakan kondisi dan kebiasaan</div>
+      </div>
+      <table class="pola-table">
+        <thead>
+          <tr>
+            <th>Subjek N1</th>
+            <th>は</th>
+            <th>Objek N2</th>
+            <th>を</th>
+            <th>Predikat V-ています</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="jp-text">わたし</div><div style="font-size:0.75rem; color:var(--abu-sedang);">Saya</div></td>
+            <td class="jp-text">は</td>
+            <td><div class="jp-text">おかね</div><div style="font-size:0.75rem; color:var(--abu-sedang);">Uang</div></td>
+            <td class="jp-text">を</td>
+            <td><div class="jp-text">もっています</div><div style="font-size:0.75rem; color:var(--abu-sedang);">Memiliki</div></td>
+          </tr>
+          <tr>
+            <td colspan="5" style="font-family:'DM Sans'; font-style:italic; font-size:0.82rem; color:var(--abu-sedang); text-align:center;">Saya memiliki uang.</td>
+          </tr>
+          <tr>
+            <td><div class="jp-text">ABCスーパー</div><div style="font-size:0.75rem; color:var(--abu-sedang);">Supermarket ABC</div></td>
+            <td class="jp-text">は</td>
+            <td><div class="jp-text">インスタントラーメン</div><div style="font-size:0.75rem; color:var(--abu-sedang);">Ramen instan</div></td>
+            <td class="jp-text">を</td>
+            <td><div class="jp-text">うっています</div><div style="font-size:0.75rem; color:var(--abu-sedang);">Menjual</div></td>
+          </tr>
+          <tr>
+            <td colspan="5" style="font-family:'DM Sans'; font-style:italic; font-size:0.82rem; color:var(--abu-sedang); text-align:center;">Supermarket ABC menjual ramen instan.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="note-box" style="margin-top:1.2rem;">
+        <div class="note-title">📌 Catatan Tata Bahasa 1</div>
+        <p style="font-size:0.85rem; margin-bottom:0.5rem;">1. Akhiran「〜ています」memiliki tiga makna, yakni menyatakan kegiatan yang sedang berlangsung, menyatakan kondisi, dan menyatakan kebiasaan, pekerjaan, serta status pribadi.</p>
+        <p style="font-size:0.85rem; margin-bottom:0.5rem;">2. Bentuk negasi dari「しっています」adalah「しりません」.</p>
+        <p style="font-size:0.85rem;">3. Partikel「に」digunakan sebagai penunjuk tempat untuk kata kerja「すみます」,「おきます」, dan「すてます」.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display'; font-size:1.1rem; font-weight:700; margin: 1.5rem 0 0.8rem;">Contoh Kalimat</h3>
+    <ul class="ex-list">
+      <li class="ex-item">
+        <span class="ex-num">1.</span>
+        <div>
+          <div class="ex-jp">わたしはけっこんしています。</div>
+          <div class="ex-romaji">watashi wa kekkon shite imasu.</div>
+          <div class="ex-id">Saya sudah menikah.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">2.</span>
+        <div>
+          <div class="ex-jp">どこにすんでいますか。</div>
+          <div class="ex-romaji">doko ni sunde imasu ka?</div>
+          <div class="ex-id">Tinggal di mana?</div>
+          <div class="ex-jp" style="margin-top:0.3rem;">．．．スラバヤにすんでいます。</div>
+          <div class="ex-romaji">...Surabaya ni sunde imasu.</div>
+          <div class="ex-id">Tinggal di Surabaya.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">3.</span>
+        <div>
+          <div class="ex-jp">山田先生をしっていますか。</div>
+          <div class="ex-romaji">Yamada sensei wo shitte imasu ka?</div>
+          <div class="ex-id">Apakah kamu mengenal Guru Yamada?</div>
+          <div class="ex-jp" style="margin-top:0.3rem;">．．．いいえ、しりません。</div>
+          <div class="ex-romaji">...iie, shirimasen.</div>
+          <div class="ex-id">Tidak, saya tidak mengenalnya.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">4.</span>
+        <div>
+          <div class="ex-jp">おとうとはアイルランガ大学でべんきょうしています。</div>
+          <div class="ex-romaji">otouto wa Airuranaga daigaku de benkyou shite imasu.</div>
+          <div class="ex-id">Adik laki-laki saya belajar di Universitas Airlangga.</div>
+        </div>
+      </li>
+      <li class="ex-item">
+        <span class="ex-num">5.</span>
+        <div>
+          <div class="ex-jp">どこではたらいていますか。</div>
+          <div class="ex-romaji">doko de hataraite imasu ka?</div>
+          <div class="ex-id">Bekerja di mana?</div>
+          <div class="ex-jp" style="margin-top:0.3rem;">．．．きっさてんではたらいています。</div>
+          <div class="ex-romaji">...kissaten de hataraite imasu.</div>
+          <div class="ex-id">Bekerja di kedai kopi.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- LATIHAN 1 -->
+  <section id="latihan1">
+    <div class="section-eyebrow">Latihan 1</div>
+    <h2>Buat kalimat dari gambar <em>(Pola A · てはいけません)</em></h2>
+    <p style="font-size:0.85rem; color:var(--abu-sedang); margin-bottom:1rem;">Buatlah kalimat menggunakan pola kalimat di atas berdasarkan gambar berikut!</p>
+    <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-bottom:1.2rem;">
+      <span style="font-weight:600;">例。</span>
+      <span class="jp-text" style="font-size:0.95rem;"> ねてはいけません。</span>
+    </div>
+    <div class="lat-img-grid">
+      <div class="lat-img-cell">
+        <div class="lat-num">例</div>
+        <img src="https://gohan-rice.github.io/Nihongo-gakushu/bab21/images/foto1.jpg" alt="例 - 寝てはいけません">
+        <div class="lat-answer" style="display:block;">ねてはいけません。<div class="romaji-small">nete wa ikemasen.</div><div class="romaji-small" style="color:var(--abu-gelap); font-size:0.7rem;">Tidak boleh tidur.</div></div>
+      </div>
+      <div class="lat-img-cell">
+        <div class="lat-num">1</div>
+        <img src="https://gohan-rice.github.io/Nihongo-gakushu/bab21/images/foto2.jpg" alt="Soal 1">
+        <div class="lat-answer" id="l1a1">はしってはいけません。<div class="romaji-small">hashitte wa ikemasen.</div><div class="romaji-small" style="color:var(--abu-gelap); font-size:0.7rem;">Tidak boleh berlari.</div></div>
+      </div>
+      <div class="lat-img-cell">
+        <div class="lat-num">2</div>
+        <img src="https://gohan-rice.github.io/Nihongo-gakushu/bab21/images/foto3.jpg" alt="Soal 2">
+        <div class="lat-answer" id="l1a2">さわいではいけません。<div class="romaji-small">sawaideは ikemasen.</div><div class="romaji-small" style="color:var(--abu-gelap); font-size:0.7rem;">Tidak boleh berisik.</div></div>
+      </div>
+      <div class="lat-img-cell">
+        <div class="lat-num">3</div>
+        <img src="https://gohan-rice.github.io/Nihongo-gakushu/bab21/images/foto4.jpg" alt="Soal 3">
+        <div class="lat-answer" id="l1a3">たべてはいけません。<div class="romaji-small">tabete wa ikemasen.</div><div class="romaji-small" style="color:var(--abu-gelap); font-size:0.7rem;">Tidak boleh makan.</div></div>
+      </div>
+      <div class="lat-img-cell">
+        <div class="lat-num">4</div>
+        <img src="https://gohan-rice.github.io/Nihongo-gakushu/bab21/images/foto5.jpg" alt="Soal 4">
+        <div class="lat-answer" id="l1a4">しゃしんをとってはいけません。<div class="romaji-small">shashin wo totte wa ikemasen.</div><div class="romaji-small" style="color:var(--abu-gelap); font-size:0.7rem;">Tidak boleh mengambil foto.</div></div>
+      </div>
+      <div class="lat-img-cell">
+        <div class="lat-num">5</div>
+        <img src="https://gohan-rice.github.io/Nihongo-gakushu/bab21/images/foto6.jpg" alt="Soal 5">
+        <div class="lat-answer" id="l1a5">およいではいけません。<div class="romaji-small">oyoide wa ikemasen.</div><div class="romaji-small" style="color:var(--abu-gelap); font-size:0.7rem;">Tidak boleh berenang.</div></div>
+      </div>
+    </div>
+    <button class="reveal-btn" onclick="toggleLat('l1')">Tampilkan / Sembunyikan Jawaban</button>
+  </section>
+
+  <!-- LATIHAN 2 -->
+  <section id="latihan2">
+    <div class="section-eyebrow">Latihan 2</div>
+    <h2>Terjemahkan ke dalam bahasa Jepang <em>(Pola B · ています)</em></h2>
+    <p style="font-size:0.85rem; color:var(--abu-sedang); margin-bottom:1rem;">Terjemahkan kalimat berikut ke dalam bahasa Jepang!</p>
+    <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-bottom:1.2rem;">
+      <span style="font-weight:600;">例。</span> Saya sudah menikah.
+      <div style="margin-top:0.3rem;">
+        <span class="jp-text" style="font-size:0.95rem; text-decoration: underline; color: var(--merah);">わたしはけっこんしています。</span>
+      </div>
+    </div>
+
+    <div id="lat2-container">
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">1. Pak Tanaka tinggal di Jakarta.</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">たなかさんはジャカルタにすんでいます。</div>
+          <div class="romaji">Tanaka-san wa Jakarta ni sunde imasu.</div>
+        </div>
+      </div>
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">2. Budi belajar bahasa Jepang.</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">ブディさんはにほんごをべんきょうしています。</div>
+          <div class="romaji">Budi-san wa nihongo wo benkyou shite imasu.</div>
+        </div>
+      </div>
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">3. Kakak perempuan bekerja di kafe.</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">あねはカフェではたらいています。</div>
+          <div class="romaji">ane wa kafe de hataraite imasu.</div>
+        </div>
+      </div>
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">4. Kantin menjual pizza dan hamburger.</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">しょくどうはピザとハンバーガーをうっています。</div>
+          <div class="romaji">shokudou wa piza to hanbaagaa wo utte imasu.</div>
+        </div>
+      </div>
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">5. Perusahaan XYZ membuat mobil.</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">XYZかいしゃはくるまをつくっています。</div>
+          <div class="romaji">XYZ kaisha wa kuruma wo tsukutte imasu.</div>
+        </div>
+      </div>
+    </div>
+    <button class="reveal-btn" onclick="toggleLat2()">Tampilkan / Sembunyikan Jawaban</button>
+  </section>
+
+  <!-- LATIHAN 3 -->
+  <section id="latihan3">
+    <div class="section-eyebrow">Latihan 3</div>
+    <h2>Susun kata menjadi kalimat</h2>
+    <p style="font-size:0.85rem; color:var(--abu-sedang); margin-bottom:1.2rem;">Susunlah kata-kata berikut menjadi kalimat yang benar lalu terjemahkanlah ke dalam bahasa Indonesia!</p>
+    <div style="background:var(--abu-debu); padding:0.8rem 1.2rem; margin-bottom:1.2rem;">
+      <span style="font-weight:600;">例。</span>
+      <span style="font-size:0.85rem; color:var(--abu-sedang);">すって・いけません・たばこ・を・は</span>
+      <div class="jp-text" style="font-size:0.95rem; margin-top:0.3rem;">たばこをすってはいけません。</div>
+      <div style="font-size:0.8rem; color:var(--abu-sedang);">Tidak boleh merokok</div>
+    </div>
+
+    <div id="lat3-container">
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">1.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">を・にもつ・ここ・いけません・は・おいて</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">ここににもつをおいてはいけません。</div>
+          <div class="romaji">koko ni nimotsu wo oite wa ikemasen.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Tidak boleh meletakkan barang di sini.</div>
+        </div>
+      </div>
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">2.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">はいって・いけません・あそこ・は・に</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">あそこにはいってはいけません。</div>
+          <div class="romaji">asoko ni haitte wa ikemasen.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Tidak boleh masuk ke sana.</div>
+        </div>
+      </div>
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">3.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">はご・この・に・すてて・を・ゴミ・いけません・は</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">このゴミばこにゴミをすててはいけません。</div>
+          <div class="romaji">kono gomibako ni gomi wo sutete wa ikemasen.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Tidak boleh membuang sampah di tempat sampah ini.</div>
+        </div>
+      </div>
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">4.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">りょうしん・マラン・は・わたし・と・すんでいます・に</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">わたしはりょうしんとマランにすんでいます。</div>
+          <div class="romaji">watashi wa ryoushin to Malang ni sunde imasu.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Saya tinggal di Malang bersama orang tua.</div>
+        </div>
+      </div>
+      <div class="lat5-item" style="border: 1px solid var(--border); padding: 1rem 1.2rem; margin-bottom:0.8rem;">
+        <div style="font-weight:600; margin-bottom:0.4rem; font-size:0.85rem;">5.</div>
+        <div class="jp-text" style="font-size:0.9rem; color:var(--abu-sedang);">じしょ・の・やまむらさん・もっています・を・は・かんこくご</div>
+        <div class="lat5-answer" style="display:none; margin-top:0.6rem;">
+          <div class="jp-text" style="font-size:0.95rem; color:var(--merah);">やまむらさんはかんこくごのじしょをもっています。</div>
+          <div class="romaji">Yamamura-san wa kankokugo no jisho wo motte imasu.</div>
+          <div style="font-size:0.8rem; color:var(--abu-sedang);">Yamamura memiliki kamus bahasa Korea.</div>
+        </div>
+      </div>
+    </div>
+    <button class="reveal-btn" onclick="toggleLat3()">Tampilkan / Sembunyikan Jawaban</button>
+  </section>
+
+  <!-- KUIS INTERAKTIF -->
+  <section id="kuis">
+    <div class="section-eyebrow">Kuis Interaktif</div>
+    <h2>Pilih jawaban yang benar</h2>
+    <div class="quiz-box">
+      <div class="quiz-question" id="qJp"></div>
+      <div class="quiz-romaji" id="qRomaji"></div>
+      <div class="quiz-target" id="qTarget"></div>
+      <div class="quiz-options" id="qOpts"></div>
+      <div class="qfb" id="qFb"></div>
+      <button class="qnext" id="qNext" onclick="nextQ()">Soal berikutnya →</button>
+    </div>
+  </section>
+
+  <!-- KOSAKATA BAB 21 -->
+  <section id="kosakata">
+    <div class="section-eyebrow">語彙リスト</div>
+    <h2>Kosakata Bab 21</h2>
+    <table class="vocab-table">
+      <thead><tr><th>No.</th><th>ごい</th><th>かんじ</th><th>いみ</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>はしります <span class="romaji">(hashirimasu)</span></td><td>走ります</td><td>Berlari</td></tr>
+        <tr><td>2</td><td>つくります <span class="romaji">(tsukurimasu)</span></td><td>作ります</td><td>Membuat</td></tr>
+        <tr><td>3</td><td>おきます <span class="romaji">(okimasu)</span></td><td>置きます</td><td>Meletakkan</td></tr>
+        <tr><td>4</td><td>うります <span class="romaji">(urimasu)</span></td><td>売ります</td><td>Menjual</td></tr>
+        <tr><td>5</td><td>しります <span class="romaji">(shirimasu)</span></td><td>知ります</td><td>Mengetahui, mengenal</td></tr>
+        <tr><td>6</td><td>すみます <span class="romaji">(sumimasu)</span></td><td>住みます</td><td>Tinggal</td></tr>
+        <tr><td>7</td><td>もちます <span class="romaji">(mochimasu)</span></td><td>持ちます</td><td>Memiliki, membawa</td></tr>
+        <tr><td>8</td><td>さわぎます <span class="romaji">(sawagimasu)</span></td><td>騒ぎます</td><td>Membuat gaduh, berisik</td></tr>
+        <tr><td>9</td><td>すてます <span class="romaji">(sutemasu)</span></td><td>捨てます</td><td>Membuang</td></tr>
+        <tr><td>10</td><td>あるきます <span class="romaji">(arukimasu)</span></td><td>歩きます</td><td>Berjalan</td></tr>
+        <tr><td>11</td><td>ピザ <span class="romaji">(piza)</span></td><td>—</td><td>Pizza</td></tr>
+        <tr><td>12</td><td>ハンバーガー <span class="romaji">(hanbaagaa)</span></td><td>—</td><td>Hamburger</td></tr>
+        <tr><td>13</td><td>インスタントラーメン <span class="romaji">(insutanto raamen)</span></td><td>—</td><td>Ramen instan</td></tr>
+        <tr><td>14</td><td>にもつ <span class="romaji">(nimotsu)</span></td><td>荷物</td><td>Paket, barang bawaan</td></tr>
+        <tr><td>15</td><td>ゴミ <span class="romaji">(gomi)</span></td><td>—</td><td>Sampah</td></tr>
+        <tr><td>16</td><td>ゴミばこ <span class="romaji">(gomibako)</span></td><td>ゴミ箱</td><td>Tempat sampah</td></tr>
+        <tr><td>17</td><td>はこ <span class="romaji">(hako)</span></td><td>箱</td><td>Kotak</td></tr>
+        <tr><td>18</td><td>どくしん <span class="romaji">(dokushin)</span></td><td>独身</td><td>Lajang</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>Rumah Bahasa Surabaya · Belajar Bahasa Jepang jadi mudah dan menyenangkan</p>
+    <p style="margin-top:0.5rem;">BAB 21 – たばこをすってはいけません・V-てはいけません・V-ています</p>
+  </footer>
+</main>
+
+<script>
+  // Toggle latihan 1 (image-based)
+  function toggleLat(prefix) {
+    let answers = document.querySelectorAll('[id^="' + prefix + 'a"]');
+    if (answers.length === 0) {
+      let btn = event.target;
+      let section = btn.closest('section');
+      let all = section.querySelectorAll('.lat-answer');
+      let hidden = all[0].style.display !== 'block';
+      all.forEach(a => a.style.display = hidden ? 'block' : 'none');
+      return;
+    }
+    let hidden = answers[0].style.display !== 'block';
+    answers.forEach(a => a.style.display = hidden ? 'block' : 'none');
+  }
+
+  // Toggle latihan 2
+  function toggleLat2() {
+    let answers = document.querySelectorAll('#lat2-container .lat5-answer');
+    let hidden = answers[0].style.display !== 'block';
+    answers.forEach(a => a.style.display = hidden ? 'block' : 'none');
+  }
+
+  // Toggle latihan 3
+  function toggleLat3() {
+    let answers = document.querySelectorAll('#lat3-container .lat5-answer');
+    let hidden = answers[0].style.display !== 'block';
+    answers.forEach(a => a.style.display = hidden ? 'block' : 'none');
+  }
+
+  // KUIS
+  const quizData = [
+    {
+      prompt: 'ここでたべ___ はいけません',
+      romaji: 'koko de tabe___ wa ikemasen',
+      target: 'Pilih bentuk て yang tepat dari たべます',
+      opts: ['て', 'で', 'に', 'を'],
+      ans: 0,
+      ex: 'たべます → たべて (V-て form) → たべてはいけません = tidak boleh makan di sini'
+    },
+    {
+      prompt: 'はし___ はいけません',
+      romaji: 'hashi___ wa ikemasen',
+      target: 'Pilih bentuk て yang tepat dari はしります',
+      opts: ['って', 'いて', 'して', 'んで'],
+      ans: 0,
+      ex: 'はしります → はしって (V-って) → はしってはいけません = tidak boleh berlari'
+    },
+    {
+      prompt: 'わたしはスラバヤに___ います',
+      romaji: 'watashi wa Surabaya ni ___ imasu',
+      target: 'Pilih bentuk て yang tepat dari すみます (tinggal)',
+      opts: ['すんで', 'すって', 'すいて', 'すれて'],
+      ans: 0,
+      ex: 'すみます → すんで → すんでいます = sedang/sudah tinggal'
+    },
+    {
+      prompt: 'やまだ先生を___ いますか',
+      romaji: 'Yamada sensei wo ___ imasu ka?',
+      target: 'Pilih bentuk て yang tepat dari しります (mengenal)',
+      opts: ['しって', 'して', 'しいて', 'しんで'],
+      ans: 0,
+      ex: 'しります → しって → しっています = mengetahui/mengenal'
+    },
+    {
+      prompt: 'しっています → bentuk negatif?',
+      romaji: '知っています → bentuk negatif?',
+      target: 'Pilih bentuk negatif yang benar',
+      opts: ['しりません', 'しっていません', 'しません', 'しらない'],
+      ans: 0,
+      ex: 'Bentuk negatif dari しっています bukan しっていません melainkan しりません'
+    },
+    {
+      prompt: 'ゴミをここに___ はいけません',
+      romaji: 'gomi wo koko ni ___ wa ikemasen',
+      target: 'Pilih bentuk て yang tepat dari すてます (membuang)',
+      opts: ['すてて', 'すって', 'すんで', 'すれて'],
+      ans: 0,
+      ex: 'すてます → すてて (V-て) → すててはいけません = tidak boleh membuang'
+    },
+    {
+      prompt: 'かいしゃはくるまを___ います',
+      romaji: 'kaisha wa kuruma wo ___ imasu',
+      target: 'Pilih bentuk て yang tepat dari つくります (membuat)',
+      opts: ['つくって', 'つくいて', 'つくんで', 'つくして'],
+      ans: 0,
+      ex: 'つくります → つくって → つくっています = sedang membuat / memproduksi'
+    },
+    {
+      prompt: 'Partikel apa yang digunakan dengan kata kerja すみます?',
+      romaji: 'Particle for すみます (tinggal)?',
+      target: 'スラバヤ ___ すんでいます',
+      opts: ['に', 'で', 'へ', 'を'],
+      ans: 0,
+      ex: 'すみます、おきます、すてます menggunakan partikel「に」sebagai penunjuk tempat'
+    }
+  ];
+
+  let curQ = 0, score = 0, answered = false;
+
+  function renderQuiz() {
+    answered = false;
+    let q = quizData[curQ];
+    document.getElementById('qJp').innerText = q.prompt;
+    document.getElementById('qRomaji').innerText = q.romaji;
+    document.getElementById('qTarget').innerHTML = `❓ ${q.target}`;
+    let optsDiv = document.getElementById('qOpts');
+    optsDiv.innerHTML = '';
+    q.opts.forEach((opt, i) => {
+      let btn = document.createElement('button');
+      btn.className = 'qbtn';
+      btn.innerText = opt;
+      btn.onclick = () => checkAns(i, btn);
+      optsDiv.appendChild(btn);
+    });
+    document.getElementById('qFb').innerHTML = '';
+    document.getElementById('qFb').className = 'qfb';
+    document.getElementById('qNext').className = 'qnext';
+  }
+
+  function checkAns(idx, btn) {
+    if (answered) return;
+    answered = true;
+    let q = quizData[curQ];
+    let all = document.querySelectorAll('.qbtn');
+    let fb = document.getElementById('qFb');
+    if (idx === q.ans) {
+      btn.classList.add('correct');
+      score++;
+      fb.innerHTML = '✓ Benar! ' + q.ex;
+      fb.className = 'qfb show ok';
+    } else {
+      btn.classList.add('wrong');
+      all[q.ans].classList.add('correct');
+      fb.innerHTML = '✗ Kurang tepat. ' + q.ex;
+      fb.className = 'qfb show ng';
+    }
+    let nx = document.getElementById('qNext');
+    nx.className = 'qnext show';
+    nx.innerText = (curQ < quizData.length-1) ? 'Soal berikutnya →' : `Selesai! Nilai: ${score}/${quizData.length}`;
+  }
+
+  function nextQ() {
+    if (curQ < quizData.length-1) {
+      curQ++;
+      renderQuiz();
+    } else {
+      document.getElementById('qFb').innerHTML = `お疲れ様！ Nilai akhir: ${score}/${quizData.length}`;
+      document.getElementById('qFb').className = 'qfb show ok';
+      document.getElementById('qNext').className = 'qnext';
+    }
+  }
+
+  window.onload = function() { renderQuiz(); };
+</script>
+</body>
+</html>
