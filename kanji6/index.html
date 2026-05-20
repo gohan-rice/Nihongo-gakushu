@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAB 8 · Kanji Kata Sifat | Rumah Bahasa SBY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=Shippori+Mincho:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --merah: #C0392B;
+      --merah-muda: rgba(192,57,43,0.08);
+      --putih: #FFFFFF;
+      --abu-debu: #F4F2F0;
+      --abu-gelap: #3A3A3A;
+      --abu-sedang: #6E6E6E;
+      --abu-muda: #DDDAD7;
+      --gold: #B78A4B;
+      --border: #E0DDD9;
+      --biru: #3B7DBF;
+      --canva: #8B3DFF;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--putih);
+      color: var(--abu-gelap);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--putih);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--merah);
+      letter-spacing: 0.03em;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--abu-sedang);
+      text-decoration: none;
+      white-space: nowrap;
+      padding: 0.2rem 0;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+    }
+    .nav-links a:hover { color: var(--merah); border-bottom-color: var(--merah); }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 2rem 4rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      scroll-margin-top: 70px;
+    }
+
+    .section-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--merah);
+      margin-bottom: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .section-eyebrow::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--merah);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--abu-gelap);
+      margin-bottom: 1.2rem;
+      line-height: 1.2;
+    }
+
+    .btn-canva {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--canva);
+      color: var(--putih);
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      margin: 1.5rem 0;
+      box-shadow: 0 4px 12px rgba(139, 61, 255, 0.2);
+      transition: 0.2s;
+    }
+    .btn-canva:hover { background: #7126E3; transform: translateY(-2px); }
+
+    .card-white {
+      background: var(--putih);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      margin-bottom: 2rem;
+    }
+
+    /* Pola table untuk grammar */
+    .pola-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    .pola-table th {
+      background: var(--biru);
+      color: white;
+      font-weight: 600;
+      font-size: 0.75rem;
+      padding: 0.8rem 1rem;
+      text-align: left;
+    }
+    .pola-table td {
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .jp-text { font-family: 'Shippori Mincho', serif; font-size: 1.2rem; font-weight: 700; }
+    .romaji-text { font-size: 0.8rem; color: var(--abu-sedang); margin-top: 0.2rem; }
+
+    /* Fill in the Blank Styles */
+    .blank-box {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border: 2px dashed var(--merah);
+      background: var(--merah-muda);
+      vertical-align: middle;
+      margin: 0 0.2rem;
+      text-align: center;
+      line-height: 38px;
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: transparent;
+      transition: 0.3s;
+      border-radius: 4px;
+    }
+    .blank-box.revealed {
+      border: 2px solid var(--merah);
+      color: var(--merah);
+      background: var(--putih);
+    }
+    .kanji-text {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--abu-gelap);
+      vertical-align: middle;
+    }
+    .kanji-luar { color: var(--biru); }
+
+    .ex-list { list-style: none; }
+    .ex-item {
+      display: flex;
+      flex-direction: column;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .ex-item:last-child { border-bottom: none; }
+    .ex-meaning { font-size: 0.85rem; color: var(--abu-sedang); font-weight: 700; margin-bottom: 0.6rem; }
+    .ex-equation { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+    .eq-sign { font-weight: 700; color: var(--abu-sedang); margin: 0 0.5rem; }
+    
+    .reveal-btn {
+      background: var(--abu-debu);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1.2rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--abu-gelap);
+      cursor: pointer;
+      transition: 0.2s;
+      border-radius: 4px;
+      width: fit-content;
+      margin-top: 0.8rem;
+    }
+    .reveal-btn:hover { border-color: var(--merah); color: var(--merah); background: var(--merah-muda); }
+
+    /* Reading Sentences */
+    .reading-hidden { display: none; margin-top: 0.8rem; padding: 0.8rem; background: var(--abu-debu); border-left: 3px solid var(--biru); border-radius: 0 4px 4px 0; }
+    .reading-hidden.show { display: block; }
+    .reading-romaji { font-size: 0.9rem; font-weight: 600; color: var(--abu-gelap); }
+    .reading-arti { font-size: 0.8rem; color: var(--abu-sedang); margin-top: 0.2rem; }
+
+    /* Karuta Grid */
+    .lat-img-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    .lat-img-cell {
+      border: 1px solid var(--border);
+      padding: 1rem;
+      text-align: center;
+      background: var(--putih);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+    }
+    .lat-img-cell img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin: 0 auto 1rem;
+      display: block;
+      border: 1px solid var(--border);
+    }
+    .lat-answer {
+      font-size: 2rem;
+      color: var(--merah);
+      display: none;
+      margin-top: 0.8rem;
+      font-family: 'Shippori Mincho', serif;
+      font-weight: 700;
+    }
+    .lat-answer.show {
+      display: block;
+    }
+    .romaji-small {
+      font-size: 0.8rem;
+      color: var(--abu-sedang);
+      margin-top: 0.2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .lat-img-grid { grid-template-columns: repeat(2, 1fr); }
+      .pola-table th, .pola-table td { padding: 0.5rem; font-size: 0.8rem; }
+      .kanji-text { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Rumah Bahasa SBY</div>
+  <div class="nav-links">
+    <a href="#materi">Materi & Grammar</a>
+    <a href="#membaca">Membaca</a>
+    <a href="#latihan-isian">Latihan Isian</a>
+    <a href="#karuta">Karuta</a>
+  </div>
+</nav>
+
+<main class="container">
+
+  <section id="cover">
+    <div style="padding: 3rem 0 1rem;">
+      <div class="section-eyebrow">Bab 8</div>
+      <h2 style="font-size:2.5rem; margin-bottom:0.5rem;">Kanji Kata Sifat (形容詞)</h2>
+      <div class="romaji-text" style="font-size:1rem; margin-bottom:1.5rem;">Keiyoushi no Kanji</div>
+      <p style="font-size:1rem; color:var(--abu-sedang); max-width:640px; line-height: 1.8;">Belajar mengenali dan membaca Kanji untuk kata sifat dasar beserta perubahan ekornya (Okurigana) dan kosakata gabungan (Jukugo).</p>
+      
+      <a href="https://canva.com" target="_blank" class="btn-canva">
+        🎬 Buka Presentasi Materi (Canva)
+      </a>
+    </div>
+  </section>
+
+  <section id="materi">
+    <div class="section-eyebrow">Pembahasan</div>
+    <h2>Aturan Ekor Hiragana & Perubahan Bentuk</h2>
+    
+    <div class="card-white">
+      <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">1. Perubahan Bentuk Waktu & Negatif</h3>
+      <table class="pola-table">
+        <thead>
+          <tr>
+            <th>Bentuk / Tenses</th>
+            <th>Contoh 1 (Lama)</th>
+            <th>Contoh 2 (Baru)</th>
+            <th>Contoh 3 (Besar)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight: 700; color: var(--biru);">Present Affirmative (+)</td>
+            <td><span class="jp-text">古い</span><div class="romaji-text">furui</div></td>
+            <td><span class="jp-text">新しい</span><div class="romaji-text">atarashii</div></td>
+            <td><span class="jp-text">大きい</span><div class="romaji-text">ookii</div></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: var(--biru);">Present Negative (-)</td>
+            <td><span class="jp-text">古くない</span><div class="romaji-text">furukunai</div></td>
+            <td><span class="jp-text">新しくない</span><div class="romaji-text">atarashikunai</div></td>
+            <td><span class="jp-text">大きくない</span><div class="romaji-text">ookikunai</div></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: var(--biru);">Past Affirmative (+)</td>
+            <td><span class="jp-text">古かった</span><div class="romaji-text">furukatta</div></td>
+            <td><span class="jp-text">新しかった</span><div class="romaji-text">atarashikatta</div></td>
+            <td><span class="jp-text">大きかった</span><div class="romaji-text">ookikatta</div></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 700; color: var(--biru);">Past Negative (-)</td>
+            <td><span class="jp-text">古くなかった</span><div class="romaji-text">furukunakatta</div></td>
+            <td><span class="jp-text">新しくなかった</span><div class="romaji-text">atarashikunakatta</div></td>
+            <td><span class="jp-text">大きくなかった</span><div class="romaji-text">ookikunakatta</div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size: 1.1rem; margin-top: 2.5rem; margin-bottom: 1rem;">2. Penggunaan dengan Kata Benda & Kata Kerja</h3>
+      <table class="pola-table">
+        <thead>
+          <tr>
+            <th>Pola Kalimat</th>
+            <th>Contoh (Jepang)</th>
+            <th>Romaji & Arti</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" style="font-weight: 700; color: var(--biru); vertical-align: middle;">Adjective + Noun (Kata Benda)</td>
+            <td><span class="jp-text">古い本</span></td>
+            <td><div class="romaji-text" style="color: var(--abu-gelap); font-weight:600;">Furui hon</div><div class="romaji-text">Buku tua / lama</div></td>
+          </tr>
+          <tr>
+            <td><span class="jp-text">新しい車</span></td>
+            <td><div class="romaji-text" style="color: var(--abu-gelap); font-weight:600;">Atarashii kuruma</div><div class="romaji-text">Mobil baru</div></td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="font-weight: 700; color: var(--biru); vertical-align: middle;">Adjective (ku) + Verb (Kata Kerja)</td>
+            <td><span class="jp-text">古くなります</span></td>
+            <td><div class="romaji-text" style="color: var(--abu-gelap); font-weight:600;">Furuku narimasu</div><div class="romaji-text">Menjadi tua/lama</div></td>
+          </tr>
+          <tr>
+            <td><span class="jp-text">大きくかきます</span></td>
+            <td><div class="romaji-text" style="color: var(--abu-gelap); font-weight:600;">Ookiku kakimasu</div><div class="romaji-text">Menulis dengan (huruf) besar</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="membaca">
+    <div class="section-eyebrow">Latihan 1</div>
+    <h2>Membaca Kalimat</h2>
+    <p style="font-size: 0.9rem; color: var(--abu-sedang); margin-bottom: 1.5rem;">Coba baca kalimat di bawah ini, lalu klik tombol untuk mengecek bacaan Romaji dan artinya.</p>
+
+    <div class="card-white">
+      <ul class="ex-list">
+        <li class="ex-item">
+          <div class="jp-text" style="font-size: 1.4rem;">休みの日が少ない。</div>
+          <button class="reveal-btn" onclick="toggleReading(this)">Cek Romaji & Arti</button>
+          <div class="reading-hidden">
+            <div class="reading-romaji">Yasumi no hi ga sukunai.</div>
+            <div class="reading-arti">Hari libur(nya) sedikit.</div>
+          </div>
+        </li>
+        <li class="ex-item">
+          <div class="jp-text" style="font-size: 1.4rem;">森の中は暗いです。</div>
+          <button class="reveal-btn" onclick="toggleReading(this)">Cek Romaji & Arti</button>
+          <div class="reading-hidden">
+            <div class="reading-romaji">Mori no naka wa kurai desu.</div>
+            <div class="reading-arti">Di dalam hutan gelap. (It is dark in the forest)</div>
+          </div>
+        </li>
+        <li class="ex-item">
+          <div class="jp-text" style="font-size: 1.4rem;">あの人はこの短大の学長です。</div>
+          <button class="reveal-btn" onclick="toggleReading(this)">Cek Romaji & Arti</button>
+          <div class="reading-hidden">
+            <div class="reading-romaji">Ano hito wa kono tandai no gakuchou desu.</div>
+            <div class="reading-arti">Orang itu adalah rektor kampus (diploma) ini.</div>
+          </div>
+        </li>
+        <li class="ex-item">
+          <div class="jp-text" style="font-size: 1.4rem;">その少年は手と足が長い。</div>
+          <button class="reveal-btn" onclick="toggleReading(this)">Cek Romaji & Arti</button>
+          <div class="reading-hidden">
+            <div class="reading-romaji">Sono shounen wa te to ashi ga nagai.</div>
+            <div class="reading-arti">Anak laki-laki itu tangan dan kakinya panjang.</div>
+          </div>
+        </li>
+        <li class="ex-item">
+          <div class="jp-text" style="font-size: 1.4rem;">水は高いところから低いところへながれる。</div>
+          <button class="reveal-btn" onclick="toggleReading(this)">Cek Romaji & Arti</button>
+          <div class="reading-hidden">
+            <div class="reading-romaji">Mizu wa takai tokoro kara hikui tokoro e nagareru.</div>
+            <div class="reading-arti">Air mengalir dari tempat tinggi ke tempat rendah.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="latihan-isian">
+    <div class="section-eyebrow">Latihan 2</div>
+    <h2>Isi Kotak yang Kosong (Menulis / Jukugo)</h2>
+    <p style="font-size: 0.9rem; color: var(--abu-sedang); margin-bottom: 1.5rem;">Perhatikan Kanji berwarna biru yang berada di luar materi bab ini. Tebak Kanji kata sifat yang tepat untuk mengisi kotak kosong merah berdasarkan petunjuk Romaji.</p>
+    
+    <div class="card-white">
+      <ul class="ex-list">
+        
+        <li class="ex-item">
+          <div class="ex-meaning">1. A new year / Tahun baru (atarashii toshi = shinnen)</div>
+          <div class="ex-equation">
+            <span class="blank-box" data-kanji="新"></span> <span class="kanji-text">しい</span> 
+            <span class="kanji-text kanji-luar">年</span>
+            <span class="eq-sign">=</span>
+            <span class="blank-box" data-kanji="新"></span> <span class="kanji-text kanji-luar">年</span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+        <li class="ex-item">
+          <div class="ex-meaning">2. An old car, second-hand car / Mobil bekas (furui kuruma = chuukosha)</div>
+          <div class="ex-equation">
+            <span class="blank-box" data-kanji="古"></span> <span class="kanji-text">い</span> 
+            <span class="kanji-text kanji-luar">車</span>
+            <span class="eq-sign">=</span>
+            <span class="kanji-text kanji-luar">中</span> <span class="blank-box" data-kanji="古"></span> <span class="kanji-text kanji-luar">車</span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+        <li class="ex-item">
+          <div class="ex-meaning">3. A president of the university / Rektor (daigaku no gakuchou)</div>
+          <div class="ex-equation">
+            <span class="blank-box" data-kanji="大"></span> <span class="kanji-text kanji-luar">学</span> 
+            <span class="kanji-text">の</span>
+            <span class="kanji-text kanji-luar">学</span> <span class="blank-box" data-kanji="長"></span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+        <li class="ex-item">
+          <div class="ex-meaning">4. A lot of people / Banyak orang (hito ga ooi)</div>
+          <div class="ex-equation">
+            <span class="kanji-text kanji-luar">人</span> <span class="kanji-text">が</span> 
+            <span class="blank-box" data-kanji="多"></span> <span class="kanji-text">い</span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+        <li class="ex-item">
+          <div class="ex-meaning">5. A few people / Sedikit orang (hito ga sukunai)</div>
+          <div class="ex-equation">
+            <span class="kanji-text kanji-luar">人</span> <span class="kanji-text">が</span> 
+            <span class="blank-box" data-kanji="少"></span> <span class="kanji-text">ない</span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+        <li class="ex-item">
+          <div class="ex-meaning">6. A dark forest / Hutan gelap (kurai mori)</div>
+          <div class="ex-equation">
+            <span class="blank-box" data-kanji="暗"></span> <span class="kanji-text">い</span> 
+            <span class="kanji-text kanji-luar">森</span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+        <li class="ex-item">
+          <div class="ex-meaning">7. To go down / Menurun (teika suru)</div>
+          <div class="ex-equation">
+            <span class="blank-box" data-kanji="低"></span> <span class="kanji-text kanji-luar">下</span> 
+            <span class="kanji-text">する</span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+        <li class="ex-item">
+          <div class="ex-meaning">8. A boy & A girl / Remaja Laki-laki & Perempuan (shounen, shoujo)</div>
+          <div class="ex-equation">
+            <span class="blank-box" data-kanji="少"></span> <span class="kanji-text kanji-luar">年</span>
+            <span class="eq-sign">/</span>
+            <span class="blank-box" data-kanji="少"></span> <span class="kanji-text kanji-luar">女</span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+        <li class="ex-item">
+          <div class="ex-meaning">9. Expensive meat & Cheap fish / Daging mahal & Ikan murah (takai niku, yasui sakana)</div>
+          <div class="ex-equation">
+            <span class="blank-box" data-kanji="高"></span> <span class="kanji-text">い</span> <span class="kanji-text kanji-luar">肉</span>
+            <span class="eq-sign">/</span>
+            <span class="blank-box" data-kanji="安"></span> <span class="kanji-text">い</span> <span class="kanji-text kanji-luar">魚</span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+        <li class="ex-item">
+          <div class="ex-meaning">10. High school & Junior college / SMA & Kampus Diploma (koukou, tandai)</div>
+          <div class="ex-equation">
+            <span class="blank-box" data-kanji="高"></span> <span class="kanji-text kanji-luar">校</span>
+            <span class="eq-sign">/</span>
+            <span class="blank-box" data-kanji="短"></span> <span class="kanji-text kanji-luar">大</span>
+          </div>
+          <button class="reveal-btn" onclick="revealBlank(this)">Lihat Jawaban</button>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section id="karuta">
+    <div class="section-eyebrow">Aktivitas Visual</div>
+    <h2>Game Karuta (Tebak Gambar)</h2>
+    <p style="font-size: 0.9rem; color: var(--abu-sedang); margin-bottom: 1.5rem;">Sebutkan kata sifat dalam bahasa Jepang yang sesuai dengan gambar di bawah ini, lalu klik untuk melihat Kanjinya!</p>
+    
+    <div class="lat-img-grid">
+      
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1554651912-f04fcdce3d59?auto=format&fit=crop&w=300&q=80" alt="New Umbrella">
+        <div class="ex-meaning">Payung yang... (Baru)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          新しい
+          <div class="romaji-small">Atarashii</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&w=300&q=80" alt="Old Antique">
+        <div class="ex-meaning">Benda yang... (Lama/Tua)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          古い
+          <div class="romaji-small">Furui</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=300&q=80" alt="Mountain">
+        <div class="ex-meaning">Gunung yang... (Tinggi)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          高い
+          <div class="romaji-small">Takai</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=300&q=80" alt="Low Valley">
+        <div class="ex-meaning">Lembah yang... (Rendah)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          低い
+          <div class="romaji-small">Hikui</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1577401239170-897940cb70ae?auto=format&fit=crop&w=300&q=80" alt="Big Elephant">
+        <div class="ex-meaning">Hewan yang... (Besar)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          大きい
+          <div class="romaji-small">Ookii</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1537213812753-2ce13db239ba?auto=format&fit=crop&w=300&q=80" alt="Small Object">
+        <div class="ex-meaning">Benda yang... (Kecil)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          小さい
+          <div class="romaji-small">Chiisai</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1598331668826-20cecb598213?auto=format&fit=crop&w=300&q=80" alt="Long Path">
+        <div class="ex-meaning">Pensil / Jalan... (Panjang)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          長い
+          <div class="romaji-small">Nagai</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1588666358327-02ebcb79a518?auto=format&fit=crop&w=300&q=80" alt="Short Pencils">
+        <div class="ex-meaning">Pensil yang... (Pendek)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          短い
+          <div class="romaji-small">Mijikai</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=300&q=80" alt="Bright Light">
+        <div class="ex-meaning">Lampu yang... (Terang)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          明るい
+          <div class="romaji-small">Akarui</div>
+        </div>
+      </div>
+      
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?auto=format&fit=crop&w=300&q=80" alt="Dark Night">
+        <div class="ex-meaning">Malam yang... (Gelap)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          暗い
+          <div class="romaji-small">Kurai</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=300&q=80" alt="Many People Crowd">
+        <div class="ex-meaning">Orang yang... (Banyak)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          多い
+          <div class="romaji-small">Ooi</div>
+        </div>
+      </div>
+
+      <div class="lat-img-cell">
+        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=300&q=80" alt="Few Person Solo">
+        <div class="ex-meaning">Orang yang... (Sedikit)</div>
+        <button class="reveal-btn" style="width: 100%; margin-top: auto;" onclick="toggleCard(this)">Buka Kartu</button>
+        <div class="lat-answer">
+          少ない
+          <div class="romaji-small">Sukunai</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<script>
+  // Fungsi Latihan Isian (Fill in Blanks)
+  function revealBlank(btn) {
+    const parentItem = btn.closest('.ex-item');
+    const blanks = parentItem.querySelectorAll('.blank-box');
+    
+    // Toggle class 'active' di tombol untuk mendeteksi status buka/tutup
+    const isRevealed = btn.classList.contains('active');
+
+    if (isRevealed) {
+      blanks.forEach(b => {
+        b.textContent = '';
+        b.classList.remove('revealed');
+      });
+      btn.textContent = 'Lihat Jawaban';
+      btn.classList.remove('active');
+    } else {
+      blanks.forEach(b => {
+        b.textContent = b.getAttribute('data-kanji');
+        b.classList.add('revealed');
+      });
+      btn.textContent = 'Tutup Jawaban';
+      btn.classList.add('active');
+    }
+  }
+
+  // Fungsi Latihan Membaca (Sentences)
+  function toggleReading(btn) {
+    const parentItem = btn.closest('.ex-item');
+    const readingDiv = parentItem.querySelector('.reading-hidden');
+    
+    readingDiv.classList.toggle('show');
+    
+    if (readingDiv.classList.contains('show')) {
+      btn.textContent = 'Tutup Arti';
+    } else {
+      btn.textContent = 'Cek Romaji & Arti';
+    }
+  }
+
+  // Fungsi Game Karuta
+  function toggleCard(btn) {
+    const parentItem = btn.closest('.lat-img-cell');
+    const answerDiv = parentItem.querySelector('.lat-answer');
+    
+    answerDiv.classList.toggle('show');
+    
+    if (answerDiv.classList.contains('show')) {
+      btn.textContent = 'Tutup Kartu';
+    } else {
+      btn.textContent = 'Buka Kartu';
+    }
+  }
+</script>
+
+</body>
+</html>
