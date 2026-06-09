@@ -1,0 +1,6 @@
+{
+  "name": "Karuta Grammar N5",
+  "description": "Japanese Grammar Karuta N5 digital flashcard game",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
