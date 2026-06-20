@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Pilihan Ganda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Rumah Bahasa</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="latihan1.html">Latihan 1</a></li>
+                <li><a href="latihan2.html">Latihan 2</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>QUIZ</h1>
+            <h2>Pilihan Ganda</h2>
+            <p>Uji pemahaman kanji kamu. Pilih salah satu jawaban yang benar.</p>
+        </div>
+
+        <!-- Soal 1 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">1. Apa arti bahasa Indonesia dari kanji "目"?</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">A. Mata</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">B. Telinga</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">C. Tangan</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Soal 2 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">2. Kanji yang memiliki arti "Hujan" adalah...</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">A. 竹</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">B. 雨</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">C. 石</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Soal 3 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">3. Bacaan Kunyomi untuk "糸" adalah...</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">A. Kome</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">B. Kai</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">C. Ito</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Soal 4 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">4. Kanji untuk "Beras" adalah...</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">A. 貝</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">B. 米</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">C. 糸</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Soal 5 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">5. Onyomi dari kanji "足" adalah...</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">A. SOKU (ソク)</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">B. SHU (シュ)</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">C. MOKU (モク)</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Soal 6 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">6. Kanji "竹" (Bambu) memiliki jumlah coretan sebanyak...</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">A. 5</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">B. 6</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">C. 7</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Soal 7 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">7. Apa arti bahasa Indonesia dari kanji "耳"?</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">A. Kepala</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">B. Telinga</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">C. Mulut</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Soal 8 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">8. Kanji "石" memiliki arti...</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">A. Kertas</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">B. Batu</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">C. Gunting</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Soal 9 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">9. Bacaan Kunyomi untuk "貝" (Kerang) adalah...</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">A. Kai</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">B. Ame</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">C. Take</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Soal 10 -->
+        <div class="quiz-card">
+            <div class="quiz-soal">10. "Tegami" (Surat) menggunakan kanji "紙" (kertas) dan awalan kanji apa?</div>
+            <div class="quiz-options">
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">A. 目 (Mata)</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, false)">B. 足 (Kaki)</button>
+                <button class="quiz-btn" onclick="checkQuiz(this, true)">C. 手 (Tangan)</button>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

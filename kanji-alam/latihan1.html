@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 - Guess the Meaning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Rumah Bahasa</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="latihan1.html">Latihan 1</a></li>
+                <li><a href="latihan2.html">Latihan 2</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>LATIHAN 1</h1>
+            <h2>Guess the Meaning</h2>
+            <p>Tebak makna dari gambar kanji berikut.</p>
+        </div>
+
+        <div class="exercise-image-container">
+            <img src="assets/guess11.jpg" alt="Guess the Image" class="hero-image">
+        </div>
+
+        <div class="exercise-boxes">
+            <!-- 10 Kotak Jawaban -->
+            <div class="exercise-box">
+                <div>Kotak 1</div>
+                <div class="answer-hidden">石 (Batu)</div>
+            </div>
+            <div class="exercise-box">
+                <div>Kotak 2</div>
+                <div class="answer-hidden">竹 (Bambu)</div>
+            </div>
+            <div class="exercise-box">
+                <div>Kotak 3</div>
+                <div class="answer-hidden">米 (Beras)</div>
+            </div>
+            <div class="exercise-box">
+                <div>Kotak 4</div>
+                <div class="answer-hidden">糸 (Benang)</div>
+            </div>
+            <div class="exercise-box">
+                <div>Kotak 5</div>
+                <div class="answer-hidden">貝 (Kerang)</div>
+            </div>
+            <div class="exercise-box">
+                <div>Kotak 6</div>
+                <div class="answer-hidden">手 (Tangan)</div>
+            </div>
+            <div class="exercise-box">
+                <div>Kotak 7</div>
+                <div class="answer-hidden">足 (Kaki)</div>
+            </div>
+            <div class="exercise-box">
+                <div>Kotak 8</div>
+                <div class="answer-hidden">雨 (Hujan)</div>
+            </div>
+            <div class="exercise-box">
+                <div>Kotak 9</div>
+                <div class="answer-hidden">耳 (Telinga)</div>
+            </div>
+            <div class="exercise-box">
+                <div>Kotak 10</div>
+                <div class="answer-hidden">目 (Mata)</div>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <button id="btn-tampilkan" onclick="toggleAnswers(this, '.answer-hidden', 'Tampilkan Jawaban', 'Sembunyikan Jawaban')">Tampilkan Jawaban</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
