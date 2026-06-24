@@ -19,6 +19,7 @@ function toggleAnswers(btnElement, targetSelector, textShow = "Tampilkan Jawaban
 // Menampilkan jawaban untuk Latihan 2 (Kotak Kanji)
 function toggleKanjiBoxes(btnElement) {
     const boxes = document.querySelectorAll('.k-box');
+    const artiElements = document.querySelectorAll('.latihan-arti');
     if (!boxes || boxes.length === 0) return;
 
     const isHidden = boxes[0].innerText === boxes[0].getAttribute('data-default');
@@ -27,10 +28,16 @@ function toggleKanjiBoxes(btnElement) {
         boxes.forEach(box => {
             box.innerText = box.getAttribute('data-answer');
         });
+        artiElements.forEach(el => {
+            el.style.display = 'block';
+        });
         btnElement.innerText = "Sembunyikan Jawaban";
     } else {
         boxes.forEach(box => {
             box.innerText = box.getAttribute('data-default');
+        });
+        artiElements.forEach(el => {
+            el.style.display = 'none';
         });
         btnElement.innerText = "Tampilkan Jawaban";
     }
